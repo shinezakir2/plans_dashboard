@@ -28,13 +28,45 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets",
+                "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/images",
+                "output": "/assets/images/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/libs",
+                "output": "/assets/libs"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/i18n",
+                "output": "/assets/i18n"
               }
             ],
             "styles": [
+              "src/assets/css/bootstrap-rtl.min.css",
+              "src/assets/css/icons.min.css",
+              "src/assets/css/app-rtl.min.css",
+              "src/assets/css/custom.min.css",
+              "src/assets/fonts/fonts.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/layout.js",
+              "src/assets/libs/bootstrap/js/bootstrap.bundle.min.js",
+              "src/assets/libs/simplebar/simplebar.min.js",
+              "src/assets/libs/node-waves/waves.min.js",
+              "src/assets/libs/feather-icons/feather.min.js",
+              "src/assets/js/pages/plugins/lord-icon-2.1.0.js",
+              "src/assets/js/plugins.js",
+              "src/assets/libs/apexcharts/apexcharts.min.js",
+              "src/assets/js/pages/dashboard-crm.init.js",
+              "src/assets/js/app.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,3 +132,4 @@
     }
   }
 }
+

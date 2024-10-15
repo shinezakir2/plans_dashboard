@@ -1,0 +1,21 @@
+{
+    "welcome_back":"مرحباً بكم",
+    "login_to_continue":"قم بتسجيل الدخول للاستمرار",
+    "login_with_sso":"تسجيل الدخول الموحد (SSO-CD)",
+    "login_with_uaepass":"تسجيل الدخول بالهوية الرقمية",
+    "welcome":"مرحباً",
+    "loading":"جاري تحميل البيانات",
+    "plans":"الخطط",
+    "progress_prec":"نسبة التقدم",
+    "previous":"السابق",
+    "next":"التالي",
+    "operations":"العمليات",
+    "load_chart_data":"تحميل بيانات المخطط",
+    "showing":"عرض",
+    "to":"إلى",
+    "of":"من",
+    "entries":"مُدخل",
+    "adcda":"هيئة ابوظبي للدفاع المدني",
+    "plan_chart":"الخطط",
+    "home":"الصفحة الرئيسية"
+}

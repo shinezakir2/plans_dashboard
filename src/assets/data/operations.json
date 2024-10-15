@@ -1,0 +1,202 @@
+{
+    "operations": [
+      {
+        "name": "إستقطاب الدارسيين ( الروتا) - المرحلة الأولى",
+        "plansCount": 15,
+        "completedPlans": 15,
+        "subAxisId": 13,
+        "remainingAmount": 116233000,
+        "spentAmount": 0,
+        "id": 1
+      },
+      {
+        "name": "إستقطاب الدارسيين ( الروتا) - المرحلة الثانية",
+        "plansCount": 39,
+        "completedPlans": 30,
+        "subAxisId": 13,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 0
+      },
+      {
+        "name": "إستقطاب الدارسيين ( الروتا) - المرحلة الثالثة",
+        "plansCount": 15,
+        "completedPlans": 0,
+        "subAxisId": 13,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 2
+      },
+      {
+        "name": "الالحقات للروتا 67",
+        "plansCount": 67,
+        "completedPlans": 0,
+        "subAxisId": 14,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 3
+      },
+      {
+        "name": "تعيين عسكريين 120",
+        "plansCount": 120,
+        "completedPlans": 120,
+        "subAxisId": 15,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 4
+      },
+      {
+        "name": "تعيين عسكريين 250",
+        "plansCount": 250,
+        "completedPlans": 0,
+        "subAxisId": 15,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 5
+      },
+      {
+        "name": "تعيين عسكريين 197",
+        "plansCount": 197,
+        "completedPlans": 0,
+        "subAxisId": 15,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 6
+      },
+      {
+        "name": "تعيين المدنيين - 42",
+        "plansCount": 42,
+        "completedPlans": 0,
+        "subAxisId": 15,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 7
+      },
+      {
+        "name": "تعيين المسعفين (207) اساسي , متوسط",
+        "plansCount": 207,
+        "completedPlans": 0,
+        "subAxisId": 15,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 8
+      },
+      {
+        "name": "المسعف المتقدم 71",
+        "plansCount": 71,
+        "completedPlans": 0,
+        "subAxisId": 15,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 9
+      },
+      {
+        "name": "إبرام عقود التغذية للعسكريين - 567",
+        "plansCount": 567,
+        "completedPlans": 567,
+        "subAxisId": 16,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 10
+      },
+      {
+        "name": "توفير الوجبات اللازمة للدارسين (الاكاديمية) لعدد 567 موظف",
+        "plansCount": 567,
+        "completedPlans": 114,
+        "subAxisId": 16,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 11
+      },
+      {
+        "name": "السيارات ( المركبات - الاليات ) توريد المركبات والاليات",
+        "plansCount": 1,
+        "completedPlans": 0,
+        "subAxisId": 17,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 12
+      },
+      {
+        "name": "مناقصات توريد المركبات والاليات",
+        "plansCount": 1,
+        "completedPlans": 0,
+        "subAxisId": 17,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 13
+      },
+      {
+        "name": "مناقصة توريد ملابس المسعفين",
+        "plansCount": 1,
+        "completedPlans": 0,
+        "subAxisId": 18,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 14
+      },
+      {
+        "name": "إبرام عقود التجهيزات والملابس العسكرية",
+        "plansCount": 1,
+        "completedPlans": 0,
+        "subAxisId": 18,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 15
+      },
+      {
+        "name": "(عمالة مساعدة - حراس امن)",
+        "plansCount": 1,
+        "completedPlans": 1,
+        "subAxisId": 20,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 16
+      },
+      {
+        "name": "محور تأهيل المباني",
+        "plansCount": 1,
+        "completedPlans": 0,
+        "subAxisId": 22,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 17
+      },
+      {
+        "name": "استراتيجية الذكاء الاصطناعي",
+        "plansCount": 2,
+        "completedPlans": 0,
+        "subAxisId": 23,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 18
+      },
+      {
+        "name": "إبرام عقد برنامج بلا جهد",
+        "plansCount": 2,
+        "completedPlans": 0,
+        "subAxisId": 23,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 19
+      },
+      {
+        "name": "إبرام عقد مختبر الابتكار",
+        "plansCount": 2,
+        "completedPlans": 0,
+        "subAxisId": 23,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 20
+      },
+      {
+        "name": "مشروع إستطلاعات ورأي ورضاء المجتمع والمتعاملين والمردين بهيئة أبوظبي للدفاع المدني",
+        "plansCount": 2,
+        "completedPlans": 0,
+        "subAxisId": 23,
+        "remainingAmount": 0,
+        "spentAmount": 0,
+        "id": 21
+      }
+    ]
+  }

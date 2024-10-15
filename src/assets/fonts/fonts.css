@@ -1,0 +1,17 @@
+/* Define the font */
+@font-face {
+    font-family: 'NotoKufiArabic';
+    src: url('NotoKufiArabicwoff2.woff2') format('woff2'), /* Modern browsers */
+         url('NotoKufiArabic-Boldwoff2.woff2') format('woff');   /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Use the custom font */
+  html,body {
+    font-family: 'NotoKufiArabic', sans-serif !important;
+  }
+
+  h1,h2,h3,h4,h5,h6,p,span {
+    font-family: 'NotoKufiArabic', sans-serif !important;
+  }

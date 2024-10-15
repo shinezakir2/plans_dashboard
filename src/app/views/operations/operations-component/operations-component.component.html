@@ -1,0 +1,207 @@
+
+
+<loading-spinner [loadingText]="loadingText" [loading]="isLoading"></loading-spinner>
+
+<breadcrumb [links]="links" [title]="pageTitle"></breadcrumb>
+
+<div id="operations" *ngIf="!isLoading && !chartLoaded">
+    <div class="row g-4 mb-3 d-none">
+        <div class="col-sm-auto">
+            <div>
+                <a href="apps-projects-create.html" class="btn btn-success"><i class="ri-add-line align-bottom me-1"></i> Add New</a>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="d-flex justify-content-sm-end gap-2">
+                <div class="search-box ms-2">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <i class="ri-search-line search-icon"></i>
+                </div>
+    
+                <select class="form-control w-md" data-choices data-choices-search-false>
+                    <option value="All">All</option>
+                    <option value="Today">Today</option>
+                    <option value="Yesterday" selected>Yesterday</option>
+                    <option value="Last 7 Days">Last 7 Days</option>
+                    <option value="Last 30 Days">Last 30 Days</option>
+                    <option value="This Month">This Month</option>
+                    <option value="Last Year">Last Year</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+        <div *ngFor="let operation of operations | paginate: { itemsPerPage: limit, currentPage: currentPage,totalItems:totalRecords }; let i = index;" class="col-xxl-3 col-sm-6 project-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="p-3 mt-n3 mx-n3 rounded-top" [ngClass]="calculateCardClass(operation.plansCount,operation.completedPlans)">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="mb-0 fs-14">
+                                <span class="text-body" Tooltip="text">
+                                    <div class="my-tooltip">{{ operation.name | excerpt:40 }}
+                                        <p class="tooltiptext">{{ operation.name }}</p>
+                                    </div>
+                                </span>
+                            </h5>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="d-flex gap-1 align-items-center my-n2">
+                                    <button type="button" class="btn avatar-xs p-0 favourite-btn material-shadow-none active">
+                                        <span class="avatar-title bg-transparent fs-15">
+                                            <i class="ri-star-fill"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="py-3">
+                        <div class="d-flex align-items-center mt-1">
+                            <a class="btn btn-primary btn-sm" href="/operations/{{operation.id}}">{{'plans' | transloco}} : {{ operation.plansCount }}</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <div class="flex-grow-1">
+                                <div>{{ 'progress_prec' | transloco }}</div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div><i class="ri-list-check align-bottom me-1 text-muted"></i> {{ operation.completedPlans }}/{{ operation.plansCount }}</div>
+                            </div>
+                        </div>
+                        <div class="progress progress-sm animated-progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" [style.width]="calculateProgress(operation.plansCount,operation.completedPlans)">
+                            </div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div>
+    
+                </div>
+                <!-- end card body -->
+            </div>
+            <!-- end card -->
+        </div>
+        <!-- end col -->
+    </div>
+    <!-- end row -->
+    
+    
+    <div class="row g-0 text-center text-sm-start align-items-center mb-4">
+        <div class="col-sm-6">
+            <div>
+                <p class="mb-sm-0 text-muted">{{'showing'|transloco}} <span class="fw-semibold">{{ currentPage }}</span> {{'to'|transloco}} <span class="fw-semibold">10</span> {{'of'|transloco}} <span class="fw-semibold text-decoration-underline">{{ totalRecords }}</span> {{'entries'|transloco}}</p>
+            </div>
+        </div>
+        <!-- end col -->
+        <div class="col-sm-6">
+            <pagination-controls
+            class="pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0"
+            (pageChange)="onPage($event)"
+             previousLabel="{{'previous' | transloco}}"
+             nextLabel="{{'next' | transloco}}">
+           </pagination-controls>
+            <ul class="d-none pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">{{ 'previous'|transloco }}</a>
+                </li>
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item ">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">4</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">5</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">{{ 'next'|transloco }}</a>
+                </li>
+            </ul>
+        </div><!-- end col -->
+    </div><!-- end row -->
+</div>
+
+
+<div id="operation-chart" *ngIf="!isLoading && chartLoaded">
+    
+    <div class="sample">
+        <org-diagram 
+            [items]="chartItems"
+            [annotations]="chartAnnotations"
+            [pageFitMode]=PageFitMode.None
+            [hasButtons]=Enabled.False
+            [cursorItem]="0"
+            [buttonsPanelSize]=40
+            [hasSelectorCheckbox]=Enabled.False
+            [templates]="[
+                {
+                    name: 'contactTemplate',
+                    itemSize: { width: 300, height: 140 },
+                    minimizedItemSize: { width: 3, height: 3 },
+                    highlightPadding: { left: 4, top: 4, right: 4, bottom: -18 },
+                    itemTemplate: contactTemplate,
+                    cursorTemplate: contactCursorTemplate,
+                    highlightTemplate: contactHighlightTemplate,
+                    cursorPadding: { left: 0, top: 0, right: 0, bottom: 0 }
+                }
+            ]"
+            [centerOnCursor]="true">
+        </org-diagram>
+    </div>
+
+    <ng-template #contactTemplate let-itemConfig="context">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="fw-medium text-muted mb-0">Users</p>
+                        <h2 class="mt-4 ff-secondary fw-semibold"><span class="counter-value" data-target="28.05">28.05</span>k</h2>
+                        <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0"><i class="ri-arrow-up-line align-middle"></i> 16.24 % </span> vs. previous month</p>
+                    </div>
+                    <div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="avatar-title bg-info-subtle rounded-circle fs-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users text-info"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div>
+        <!-- <mat-card appearance="outlined" class="example-card" [ngStyle]="{height:150}">
+            <mat-card-title-group>
+                <mat-card-title>{{itemConfig.title}}</mat-card-title>
+                <mat-card-subtitle [className]="itemConfig.context.status">{{itemConfig.context.status}}</mat-card-subtitle>
+                <img mat-card-sm-image [src]="itemConfig.image" [alt]="itemConfig.title" >
+            </mat-card-title-group>
+            <mat-card-content>
+                {{itemConfig.description}}
+            </mat-card-content>
+            <ng-container *ngIf="isCursor">
+                <mat-card-footer>
+                    <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+                </mat-card-footer>
+            </ng-container>
+        </mat-card> -->
+    </ng-template>
+    <ng-template #contactCursorTemplate let-itemConfig="context">
+        
+    </ng-template>
+    <ng-template #contactHighlightTemplate let-itemConfig="context">
+        <div class="highlight-frame"></div>
+        <div class="cursor-badge">
+            <button (click)="onChartClick($event, itemConfig)" aria-label="Example icon button with a home icon">
+                <!-- <mat-icon>{{itemConfig.context.icon}}</mat-icon> -->
+            </button>
+        </div>
+    </ng-template>
+</div>
