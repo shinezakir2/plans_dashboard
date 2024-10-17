@@ -5,6 +5,7 @@ import { BtnLoadingComponent } from './btn-loading/btn-loading.component';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { TranslocoModule } from '@ngneat/transloco';
 import { BreadCrumbComponent } from './breadcrumb/breadcrumb.component';
+import { SharedPipesModule } from '../pipes/shared-pipes.module';
 
 const components = [
   BtnLoadingComponent,

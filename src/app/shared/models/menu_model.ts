@@ -4,11 +4,12 @@ export class MenuDTO {
   
 export class SubMenu {
     id!: number
-    axisNameEN: any
+    axisNameEN!: any
     axisNameAR!: string
-    axisDescEN: any
+    axisDescEN!: any
     axisDescAR!: string
     count!: number
+    href!:string
     subAxis!: SubAxi[]
 }
   

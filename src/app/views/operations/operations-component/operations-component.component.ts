@@ -57,9 +57,8 @@ export class OperationsComponentComponent implements OnInit {
   loadOperationChart(operationId:any){
     this.loadingText = 'load_chart_data';
     this.isLoading=true;
-    this.operationService.GetOperation(operationId).subscribe({
+    this.operationService.GetOperationPlans(operationId).subscribe({
       next:(data:any)=>{
-        console.log(data);
         this.loadingText = 'loading';
         this.isLoading=false;
         this.bindChart(data);
@@ -68,8 +67,75 @@ export class OperationsComponentComponent implements OnInit {
       }
     });
   }
+  allSteps:any =[];
+  bindChart(data:any){ 
+    this.chartItems = [
+      new OrgItemConfig({
+        id: 1,
+        parent: null,
+        title: "إستقطاب الدارسيين ( الروتا)",
+        description: "",
+        context: { 
+          type: "operation",
+          plansCount: "3",
+          completedPlans: "3",
+          id: "1"
+        },
+        templateName: "operationTemplate",
+        image: "",
+        itemTitleColor: "red"
+      })
+    ];
 
-  bindChart(data:any){
+    for (let index = 0; index < data.plans.length; index++) {
+      const plan = data.plans[index];
+      this.chartItems.push(
+        {
+          id: plan.id,
+          parent: plan.operationId,
+          title: plan.planNameAR,
+          description: "",
+          context: { 
+            type: "plan",
+            plansCount: "3",
+            completedPlans: "3",
+            id: "1"
+          },
+          templateName: "planTemplate",
+          image: "",
+          itemTitleColor: "red"
+        }
+      );
+      if(plan.steps != undefined){
+        for (let index = 0; index < plan.steps.length; index++) {
+          this.allSteps.push(plan.steps[index]);
+        }
+      }
+    }
+
+
+  for (let index = 0; index < this.allSteps.length; index++) {
+    var step = this.allSteps[index];
+    console.log('this.allSteps',step)
+      this.chartItems.push(
+      {
+        id: step.id,
+        parent: step.parentId,
+        title: step.stepName,
+        description: "",
+        context: { 
+          type: "step",
+          plansCount: "3",
+          completedPlans: "3",
+          id: "1"
+        },
+        templateName: "stepTemplate",
+        image: "",
+        itemTitleColor: "red"
+      }
+    );
+  }
+  
     this.chartAnnotations = [
       new HighlightPathAnnotationConfig({
         annotationType: AnnotationType.HighlightPath,
@@ -81,7 +147,7 @@ export class OperationsComponentComponent implements OnInit {
       }),
       new HighlightPathAnnotationConfig({
         annotationType: AnnotationType.Background,
-        items: [8,6],//[4, 0],
+        items: [334,337],//[4, 0],
         color: Colors.Red,
         lineWidth: 2,
         opacity: 1,
@@ -92,110 +158,12 @@ export class OperationsComponentComponent implements OnInit {
         lineType:LineType.Dashed,
         connectorPlacementType:ConnectorPlacementType.Offbeat,
         label:'Waiting for',
-        fromItem:6,
-        toItem:8,
+        fromItem:335,
+        toItem:337,
         color: Colors.Red,
         lineWidth: 3,
       })
     ];
-  
-  
-  
-    this.chartItems = [
-      new OrgItemConfig({
-        id: 0,
-        parent: null,
-        title: "Operation 1",
-        description: "VP, Public Sector",
-        image: "./assets/images/o.png",
-        context: { phone: "(123) 456-78-90", email: "itema@org.com", icon: "home", color: "primary" },
-        templateName: "contactTemplate",
-        itemTitleColor: "red"
-      }),
-      new OrgItemConfig({
-        id: 1,
-        parent: 0,
-        title: "Plan 1",
-        description: "VP, Human Resources",
-        context: { phone: "(123) 456-78-90", email: "itema@org.com", icon: "home", color: "warn" },
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      }),
-      new OrgItemConfig({
-        id: 2,
-        parent: 0,
-        title: "Plan 2",
-        context: { phone: "(123) 654-78-90", email: "itemc@org.com", icon: "home", color: "accent" },
-        description: "Business Solutions, US",
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      }),
-      new OrgItemConfig({
-        id: 3,
-        parent: 0,
-        title: "Plan 3",
-        context: { phone: "(123) 654-78-90", email: "itemc@org.com", icon: "home", color: "accent" },
-        description: "Business Solutions, US",
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      }),
-      new OrgItemConfig({
-        id: 4,
-        parent: 0,
-        title: "Plan 4",
-        context: { phone: "(123) 654-78-90", email: "itemc@org.com", icon: "home", color: "accent" },
-        description: "Business Solutions, US",
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      }),
-      new OrgItemConfig({
-        id: 5,
-        parent: 1,
-        title: "Step 1",
-        context: { phone: "(123) 654-78-90", email: "itemc@org.com", icon: "home", color: "accent",status:'completed' },
-        description: "Business Solutions, US",
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      }),
-      new OrgItemConfig({
-        id: 6,
-        parent: 5,
-        title: "Step 2",
-        context: { phone: "(123) 654-78-90", email: "itemc@org.com", icon: "home", color: "accent",status:'pending' },
-        description: "Business Solutions, US",
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      }),
-      new OrgItemConfig({
-        id: 7,
-        parent: 6,
-        title: "Step 3",
-        context: { phone: "(123) 654-78-90", email: "itemc@org.com", icon: "home", color: "accent",status:'completed' },
-        description: "Business Solutions, US",
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      }),
-      new OrgItemConfig({
-        id: 8,
-        parent: 4,
-        title: "Step 1",
-        context: { phone: "(123) 654-78-90", email: "itemc@org.com", icon: "home", color: "accent",status:'pending' },
-        description: "Business Solutions, US",
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      }),
-      new OrgItemConfig({
-        id: 9,
-        parent: 2,
-        title: "Step 1",
-        context: { phone: "(123) 654-78-90", email: "itemc@org.com", icon: "home", color: "accent",status:'pending' },
-        description: "Business Solutions, US",
-        image: "./assets/images/p.png",
-        templateName: "contactTemplate"
-      })
-    ];
-  
-    
   }
 
   onChartClick(event: Event, itemConfig: OrgItemConfig) {
@@ -214,23 +182,24 @@ export class OperationsComponentComponent implements OnInit {
     if (allCount === 0) {
       return 0+"%";  // Avoid division by zero
     }
-    return ((completedCount / allCount) * 100)+"%";
+    var percentage = Math.floor(((completedCount / allCount) * 100));
+    return percentage+"%";
   }
 
-  calculateCardClass(allCount:number,completedCount:number): string {
+  calculateClass(allCount:number,completedCount:number): string {
     if (allCount === 0) {
-      return "bg-info-subtle";  // Avoid division by zero
+      return "info";  // Avoid division by zero
     }
     var prec = ((completedCount / allCount) * 100)
-    if(prec < 30)
-      return 'bg-danger-subtle';
-    else if(prec < 50)
-      return 'bg-warning-subtle';
-    else if(prec < 75)
-      return 'bg-success-subtle';
+    if(prec < 50)
+      return 'danger';
+    else if(prec > 50  && prec < 70)
+      return 'warning';
+    else if(prec > 70)
+      return 'success';
     else if (prec > 80)
-      return 'bg-success-subtle';
-    return 'bg-info-subtle';
+      return 'success';
+    return 'info';
 
   }
 

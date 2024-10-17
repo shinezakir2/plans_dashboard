@@ -11,6 +11,7 @@ import { environment } from '../environments/environment';
 import { LOGIN_URL } from './shared/common/constants';
 import { AppService } from './shared/services/app.service';
 import { OperationService } from './shared/services/operation.service';
+import { SharedPipesModule } from './shared/pipes/shared-pipes.module';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -27,6 +28,7 @@ export const appConfig: ApplicationConfig = {
      importProvidersFrom([
       HttpClientModule,
       SharedModule,
+      SharedPipesModule,
       AuthModule.forRoot({
         config: {
           authority:  environment.authorityURL,

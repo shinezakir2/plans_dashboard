@@ -4,8 +4,7 @@ import { BlankLayoutComponent } from './blank-layout/blank-layout.component';
 import { RouterModule } from '@angular/router';
 import { HeaderLayoutComponent } from './header-layout/header-layout.component';
 import { TranslocoModule } from '@ngneat/transloco';
-import { SharedComponentsModule } from '../shared-components.module';
-import { LoadingSpinnerComponent } from '../loading-spinner/loading-spinner.component';
+import { SharedPipesModule } from '../../pipes/shared-pipes.module';
 
 const components = [
   BlankLayoutComponent,
@@ -18,7 +17,8 @@ const components = [
   imports: [
     CommonModule,
     TranslocoModule,
-    RouterModule
-  ]
+    RouterModule,
+    SharedPipesModule
+]
 })
 export class LayoutsModule { }

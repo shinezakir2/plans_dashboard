@@ -9,11 +9,17 @@ export class OperationService {
   constructor(
     private httpClient: HttpClient
   ) { }
-
+  fromJson:boolean=true;
   GetOperations(): Observable<any> {
-    return this.httpClient.get(`assets/data/operations.json`);
+    if(!this.fromJson)
+      return this.httpClient.get(`assets/data/operations.json`);
+    else
+      return this.httpClient.get(`assets/data/operations.json`);
   }
-  GetOperation(operationId:any): Observable<any> {
-    return this.httpClient.get(`assets/data/operation.json`);
+  GetOperationPlans(operationId:any): Observable<any> {
+    if(!this.fromJson)
+      return this.httpClient.get(`assets/data/plans.json`);
+    else
+      return this.httpClient.get(`assets/data/plans.json`);
   }
 }

@@ -732,11 +732,19 @@
                 <ul class="navbar-nav" id="navbar-nav" *ngIf="menuLoaded">
                     <li class="menu-title"><span data-key="t-menu">Menu</span></li>
 
-                    <li class="nav-item" *ngFor="let menuItem of menuItems.data">
-                        <a class="nav-link menu-link" href="#menu_{{menuItem.id}}" data-bs-toggle="collapse" role="button" aria-expanded="false">
-                            <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">{{ menuItem.axisNameAR }}</span>
+                    <li class="nav-item" *ngFor="let menuItem of menuItems.data | orderBy: 'id'">
+                        <a class="nav-link menu-link" *ngIf="menuItem.id!=0 && menuItem.id!=-1" [href]="menuItem.subAxis != undefined?'#menu_{{menuItem.id}}':menuItem.href" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                            <i class="ri-apps-2-line"></i>
+                            <span data-key="t-apps">{{ menuItem.axisNameAR }}</span>
                         </a>
-                        <div class="collapse menu-dropdown" id="menu_{{menuItem.id}}">
+
+                        <a class="nav-link menu-link" *ngIf="menuItem.id==0 || menuItem.id==-1" [href]="menuItem.subAxis != undefined?'#menu_{{menuItem.id}}':menuItem.href">
+                            <i class="ri-home-7-line" *ngIf="menuItem.id==-1"></i>
+                            <i class="ri-dashboard-line" *ngIf="menuItem.id==0"></i>
+                            <span data-key="t-apps">{{ menuItem.axisNameEN | transloco }}</span>
+                        </a>
+
+                        <div class="collapse menu-dropdown" id="menu_{{menuItem.id}}" *ngIf="menuItem.subAxis != undefined">
                             <ul class="nav nav-sm flex-column">
                                 <li class="nav-item" *ngFor="let subItem of menuItem.subAxis">
                                     <a href="{{subItem.id}}" class="nav-link" data-key="t-analytics"> {{subItem.subAxisNameAR}} </a>
