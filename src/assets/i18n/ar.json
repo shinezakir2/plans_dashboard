@@ -17,5 +17,22 @@
     "entries":"مُدخل",
     "adcda":"هيئة ابوظبي للدفاع المدني",
     "plan_chart":"الخطط",
-    "home":"الصفحة الرئيسية"
+    "home":"الصفحة الرئيسية",
+    "from":"من",
+    "aed":"د.إ",
+    "deadline":"deadline",
+    "responsibleOfficer":"المعني بالتنفيذ",
+    "monitoringOfficer":"المعني بالمتابعة",
+    "plan_status_1":"مكتملة",
+    "plan_status_2":"قيد الإنجاز",
+    "plan_status_3":"لم تبدأ بعد",
+    "date":"التاريخ",
+    "targetedCount":"العدد الكلي",
+    "completedCount":"العدد المنجز",
+    "completedPercentage":"نسبة الإكتمال",
+    "stepWeight":"الوزن",
+    "search":"بحث",
+    "no_data":"لا توجد بيانات",
+    "spent_amount":"المبلغ المنفق",
+    "total_amount":"المبلغ المخصص" 
 }

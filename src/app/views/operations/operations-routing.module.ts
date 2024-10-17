@@ -8,7 +8,11 @@ const routes: Routes = [
     component: OperationsComponentComponent
   },
   {
-    path: ':operationId',
+    path: 'operations',
+    component: OperationsComponentComponent
+  },
+  {
+    path: 'operation/:operationId',
     component: OperationsComponentComponent
   }
 ];

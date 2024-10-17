@@ -8,7 +8,7 @@ export const routes: Routes = [
         component: HeaderLayoutComponent,
         children: [
           {
-            path: 'operations',
+            path: '',
             loadChildren: () => import('./views/operations/operations.module').then(m => m.OperationsModule)
           }
         ]
@@ -20,6 +20,16 @@ export const routes: Routes = [
           {
             path: 'sessions',
             loadChildren: () => import('./views/sessions/sessions.module').then(m => m.SessionsModule)
+          }
+        ]
+      },
+      {
+        path: '',
+        component: HeaderLayoutComponent,
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./views/axis/axis.module').then(m => m.AxisModule)
           }
         ]
       },

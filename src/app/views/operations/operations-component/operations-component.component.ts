@@ -1,25 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { OperationService } from '../../../shared/services/operation.service';
-import { AnnotationType, Colors,Enabled , ConnectorAnnotationConfig, ConnectorPlacementType, HighlightPathAnnotationConfig, LineType, OrgItemConfig, PageFitMode, GroupByType } from 'ngx-basic-primitives';
+import { AnnotationType, Colors,Enabled , ConnectorAnnotationConfig, ConnectorPlacementType, LineType, OrgItemConfig, PageFitMode, GroupByType, HighlightPathAnnotationConfig } from 'ngx-basic-primitives';
 import { ActivatedRoute } from '@angular/router';
+import { ApexChart, ApexNonAxisChartSeries, ApexResponsive } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-operations-component',
   templateUrl: './operations-component.component.html',
   styleUrl: './operations-component.component.scss'
 })
-export class OperationsComponentComponent implements OnInit {
+
+
+export class OperationsComponentComponent implements OnInit  {
   isLoading:boolean=true;
   loadingText='loading';
 
   totalRecords:number= 20;
   limit:number= 12;
   currentPage:number=1;
+  allOperations:any[]=[];
   operations:any[]=[];
   operationId!:any;
   pageTitle='operations';
   links:any[]=[];
-
+  filterTerm:string='';
   //chart
   chartLoaded=false;
   chartAnnotations:any[]=[];
@@ -28,7 +32,6 @@ export class OperationsComponentComponent implements OnInit {
   Enabled = Enabled;
   LineType = LineType;
   GroupByType = GroupByType;
-  //chart
 
   constructor(private operationService:OperationService,private route:ActivatedRoute){
     this.operationId = this.route.snapshot.paramMap.get('operationId')?.toString();
@@ -37,6 +40,7 @@ export class OperationsComponentComponent implements OnInit {
       this.loadOperationChart(this.operationId);
     }
   }
+  
   ngOnInit(): void {
     this.getOperations();
 
@@ -47,11 +51,20 @@ export class OperationsComponentComponent implements OnInit {
     this.isLoading=false;
     this.operationService.GetOperations().subscribe({
       next:(data:any)=>{
+        this.allOperations = data.operations;
         this.operations = data.operations;
         this.totalRecords = this.operations.length;
         console.log(this.operations);
       }
     });
+  }
+
+  filterOperations(){
+    if(this.filterTerm.length > 0){
+      this.operations = this.allOperations.filter(item => item.name.toLowerCase().includes(this.filterTerm.toLowerCase()));
+    }else{
+      this.operations = this.allOperations;
+    }
   }
 
   loadOperationChart(operationId:any){
@@ -67,44 +80,50 @@ export class OperationsComponentComponent implements OnInit {
       }
     });
   }
+
+
+
   allSteps:any =[];
   bindChart(data:any){ 
-    this.chartItems = [
-      new OrgItemConfig({
-        id: 1,
-        parent: null,
-        title: "إستقطاب الدارسيين ( الروتا)",
-        description: "",
-        context: { 
-          type: "operation",
-          plansCount: "3",
-          completedPlans: "3",
-          id: "1"
-        },
-        templateName: "operationTemplate",
-        image: "",
-        itemTitleColor: "red"
-      })
-    ];
+    console.log('data',data);
+    this.chartItems.push(new OrgItemConfig({
+      id: data.id,
+      parent: null,
+      title: data.name,
+      context: { 
+        type: "operation",
+        plansCount: data.plansCount,
+        completedPlans: data.completedPlans,
+        startDate:data.startDate,
+        endDate:data.endDate
+      },
+      templateName: "operationTemplate"
+    }));
+
+
 
     for (let index = 0; index < data.plans.length; index++) {
       const plan = data.plans[index];
       this.chartItems.push(
-        {
+        new OrgItemConfig({
           id: plan.id,
           parent: plan.operationId,
           title: plan.planNameAR,
-          description: "",
           context: { 
             type: "plan",
-            plansCount: "3",
-            completedPlans: "3",
-            id: "1"
+            planStatus:plan.planStatus,
+            startDate:plan.startDate,
+            endDate:plan.endDate,
+            targetedCount:plan.targetedCount,
+            completedCount:plan.completedCount,
+            budget:plan.budget,
+            remainingAmount:plan.remainingAmount,
+            spentAmount:plan.spentAmount,
+            responsibleOfficer:plan.responsibleOfficer,
+            monitoringOfficer:plan.monitoringOfficer,
           },
-          templateName: "planTemplate",
-          image: "",
-          itemTitleColor: "red"
-        }
+          templateName: "planTemplate"
+        })
       );
       if(plan.steps != undefined){
         for (let index = 0; index < plan.steps.length; index++) {
@@ -112,58 +131,51 @@ export class OperationsComponentComponent implements OnInit {
         }
       }
     }
+    for (let index = 0; index < this.allSteps.length; index++) {
+      var step = this.allSteps[index];
+        this.chartItems.push(
+        {
+          id: step.id,
+          parent: step.parentId,
+          title: step.stepName,
+          context: { 
+            type: "step",
+            nextSteps: step.nextSteps,
+            completedPercentage: step.completedPercentage,
+            startDate: step.startDate,
+            endDate: step.endDate,
+            stepWeight: step.stepWeight,
+          },
+          templateName: "stepTemplate"
+        }
+      );
 
-
-  for (let index = 0; index < this.allSteps.length; index++) {
-    var step = this.allSteps[index];
-    console.log('this.allSteps',step)
-      this.chartItems.push(
-      {
-        id: step.id,
-        parent: step.parentId,
-        title: step.stepName,
-        description: "",
-        context: { 
-          type: "step",
-          plansCount: "3",
-          completedPlans: "3",
-          id: "1"
-        },
-        templateName: "stepTemplate",
-        image: "",
-        itemTitleColor: "red"
+      //chartAnnotations
+      if(step.nextSteps!=undefined){
+        if(step.nextSteps.length>0){
+          for (let i = 0; i < step.nextSteps.length; i++) {
+            const nextStep = step.nextSteps[i];
+            console.log('nextStep',nextStep);
+            this.chartAnnotations.push(
+              new ConnectorAnnotationConfig({
+                annotationType: AnnotationType.Connector,
+                lineType:LineType.Solid,
+                connectorPlacementType:ConnectorPlacementType.Offbeat,
+                label:'',
+                fromItem:step.id,
+                toItem:nextStep,
+                color: Colors.DarkGreen,
+                lineWidth: 1
+              })
+            );
+            
+          }
+        }
       }
-    );
-  }
+    }
+    console.log(this.chartAnnotations);
   
-    this.chartAnnotations = [
-      new HighlightPathAnnotationConfig({
-        annotationType: AnnotationType.HighlightPath,
-        items: [],//[5, 0],
-        color: Colors.Navy,
-        lineWidth: 12,
-        opacity: 0.3,
-        showArrows: false
-      }),
-      new HighlightPathAnnotationConfig({
-        annotationType: AnnotationType.Background,
-        items: [334,337],//[4, 0],
-        color: Colors.Red,
-        lineWidth: 2,
-        opacity: 1,
-        showArrows: true
-      }),
-      new ConnectorAnnotationConfig({
-        annotationType: AnnotationType.Connector,
-        lineType:LineType.Dashed,
-        connectorPlacementType:ConnectorPlacementType.Offbeat,
-        label:'Waiting for',
-        fromItem:335,
-        toItem:337,
-        color: Colors.Red,
-        lineWidth: 3,
-      })
-    ];
+    
   }
 
   onChartClick(event: Event, itemConfig: OrgItemConfig) {
@@ -178,12 +190,12 @@ export class OperationsComponentComponent implements OnInit {
   }
 
 
-  calculateProgress(allCount:number,completedCount:number): string {
-    if (allCount === 0) {
-      return 0+"%";  // Avoid division by zero
+  calculatePrecentage(count:number,completedCount:number): number {
+    if (count === 0) {
+      return 0;  // Avoid division by zero
     }
-    var percentage = Math.floor(((completedCount / allCount) * 100));
-    return percentage+"%";
+    var percentage = Math.floor(((completedCount / count) * 100));
+    return percentage;
   }
 
   calculateClass(allCount:number,completedCount:number): string {
@@ -201,6 +213,17 @@ export class OperationsComponentComponent implements OnInit {
       return 'success';
     return 'info';
 
+  }
+
+  getPlanStatusClass(planStatus:number):string{
+    if(planStatus == 1){
+      return 'bg-success-subtle text-success';
+    }else if(planStatus == 2){
+      return 'bg-warning-subtle text-warning';
+    }else if(planStatus == 3){
+      return 'bg-danger-subtle text-danger';
+    }
+    return 'bg-primary-subtle text-primary';
   }
 
   bindCrumb(){

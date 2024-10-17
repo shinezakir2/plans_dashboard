@@ -21,22 +21,20 @@ export class AppComponent implements OnInit {
         //this.primengConfig.ripple = true;
         this.userData$ = this.oidcSecurityService.userData$;
         console.log('userData',this.userData$);
-        this.oidcSecurityService.checkAuth().subscribe(({ isAuthenticated }) => {
-          console.log(isAuthenticated);
-            if(!isAuthenticated){
-               if(this.router.url != this.loginUrl)
-              {
-                this.router.navigateByUrl(this.loginUrl);
-              }
-            }
-            else{
-                this.isAuthenticated = isAuthenticated;
-                //debugger;
-                //console.log('app authenticated', isAuthenticated);
-                //this.router.navigateByUrl('/operations');
-            }
-        });
-
-
+        // this.oidcSecurityService.checkAuth().subscribe(({ isAuthenticated }) => {
+        //   console.log(isAuthenticated);
+        //     if(!isAuthenticated){
+        //        if(this.router.url != this.loginUrl)
+        //       {
+        //         this.router.navigateByUrl(this.loginUrl);
+        //       }
+        //     }
+        //     else{
+        //         this.isAuthenticated = isAuthenticated;
+        //         //debugger;
+        //         //console.log('app authenticated', isAuthenticated);
+        //         //this.router.navigateByUrl('/operations');
+        //     }
+        // });
     }
 }
