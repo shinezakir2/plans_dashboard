@@ -1,0 +1,99 @@
+<div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">{{planModel.planNameAR}}</h5>
+    <button type="button" class="btn btn-ghost-primary waves-effect waves-light material-shadow-none" data-bs-dismiss="offcanvas"> {{ 'go_back' | transloco }} </button>
+</div>
+<div class="offcanvas-body">
+
+    <div class="row">
+        <div class="col-auto layout-rightside-col d-block">
+            <div class="overlay"></div>
+            <div class="layout-rightside">
+                <div class="card rounded-0">
+                    <div class="card-body p-0">
+                        <div class="p-3 mt-2">
+                            <h6 class="text-muted mb-3 text-uppercase fw-semibold">{{'plan_details' | transloco}}
+                            </h6>
+                            <ul class="ps-3 text-muted">
+                                <li class="py-1">
+                                    <span class="text-muted">{{ 'status' | transloco }}
+                                         <span class="float-end">
+                                            <span class="badge" [ngClass]="getPlanStatusClass(planModel.planStatus)">
+                                                {{ 'plan_status_'+planModel.planStatus | transloco }}
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="py-1">
+                                    <span class="text-muted">{{ 'date' | transloco }} 
+                                        <span class="float-end">
+                                            {{ planModel.startDate | date:'dd/MM/yyyy'}} - {{ planModel.endDate | date:'dd/MM/yyyy' }}
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="py-1">
+                                    <span class="text-muted">{{ 'timePriod' | transloco }} 
+                                        <span class="float-end">
+                                            <span class="badge" [ngClass]="getStatusOverwrite(planModel.planStatus,planModel.startDate,planModel.endDate)">
+                                                {{getStatusOverwrite(planModel.planStatus,planModel.startDate,planModel.endDate) | transloco}}
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="py-1">
+                                    <span class="text-muted">{{ 'timeStatus' | transloco }} 
+                                        <span class="float-end">
+                                            <span class="text-success" *ngIf="planModel.planTimelineInWeeks <= 2 || planModel.planTimelineInWeeks > 10">{{ planModel.planTimelineInWeeks }} {{ 'week' | transloco}}</span>
+                                            <span class="text-success" *ngIf="planModel.planTimelineInWeeks > 2 && planModel.planTimelineInWeeks <= 10">{{ planModel.planTimelineInWeeks }} {{ 'weeks' | transloco}}</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="py-1">
+                                    <span class="text-muted">{{ 'responsibleOfficer' | transloco }} 
+                                        <span class="float-end">
+                                            {{planModel.responsibleOfficer}}
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="py-1">
+                                    <span class="text-muted">{{ 'monitoringOfficer' | transloco }} 
+                                        <span class="float-end">
+                                            {{planModel.monitoringOfficer}}
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end row-->
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h3>{{ 'steps' | transloco }}</h3>
+                </div>
+                <div class="card-body steps-card">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="nav nav-pills flex-column nav-pills-tab custom-verti-nav-pills text-center" role="tablist" aria-orientation="vertical">
+                                <a *ngFor="let step of planModel.steps" [ngClass]="planModel.steps?.indexOf(step)==0?'show active':''" class="nav-link" id="custom-v-pills-home-tab" data-bs-toggle="pill" href="#step_{{step.id}}" role="tab" aria-controls="custom-v-pills-home" aria-selected="true">
+                                    <i class=" ri-arrow-right-s-line fs-20 mb-1 d-none"></i> {{step.stepName}}
+                                </a>
+                            </div>
+                        </div> <!-- end col-->
+                        <div class="col-lg-9">
+                            <div class="tab-content text-muted mt-3 mt-lg-0">
+                                <div *ngFor="let step of planModel.steps; let i = index;" [ngClass]="planModel.steps?.indexOf(step)==0?'show active':''" class="tab-pane fade" id="step_{{step.id}}" role="tabpanel" aria-labelledby="custom-v-pills-home-tab">
+                                    <app-step-details [stepModel]="step"></app-step-details>
+                                </div>
+                                <!--end tab-pane-->
+                            </div>
+                        </div> <!-- end col-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

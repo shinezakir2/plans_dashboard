@@ -34,5 +34,20 @@
     "search":"بحث",
     "no_data":"لا توجد بيانات",
     "spent_amount":"المبلغ المنفق",
-    "total_amount":"المبلغ المخصص" 
+    "total_amount":"المبلغ المخصص" ,
+    "remaining_amount":"المبلغ المتبقي",
+    "counts":"العدد",
+    "status":"الحالة",
+    "timePriod":"المدة الزمنية",
+    "timeStatus":"حالة",
+    "plan":"الخطة",
+    "delayed":"متأخر",
+    "ontime":"في الوقت المحدد",
+    "early":"مبكر",
+    "week":"أسبوع",
+    "weeks":"أسابيع",
+    "details":"التفاصيل",
+    "go_back":"الرجوع للصفحة السابقة",
+    "steps":"الخطوات",
+    "plan_details":"تفاصيل الخطة"
 }

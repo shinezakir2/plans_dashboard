@@ -12,13 +12,14 @@ import { LOGIN_URL } from './shared/common/constants';
 import { AppService } from './shared/services/app.service';
 import { OperationService } from './shared/services/operation.service';
 import { SharedPipesModule } from './shared/pipes/shared-pipes.module';
+import { AxisService } from './shared/services/axis.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     {
       provide: TRANSLOCO_CONFIG,
       useValue: {
-        availableLangs: ['ar'],
+        availableLangs: ['ar','en'],
         defaultLang: 'ar',
         reRenderOnLangChange: true
       } as TranslocoConfig,
@@ -46,7 +47,7 @@ export const appConfig: ApplicationConfig = {
      ]),
      provideTransloco({
       config: { 
-        availableLangs: ['en','ar'],
+        availableLangs: ['ar','en'],
         defaultLang: 'ar',
         // Remove this option if your application doesn't support changing language in runtime.
         reRenderOnLangChange: true,
@@ -56,6 +57,7 @@ export const appConfig: ApplicationConfig = {
     }),
     AppService,
     OperationService,
+    AxisService,
     {
       provide: LOGIN_URL,
       useValue: '/sessions/signin'

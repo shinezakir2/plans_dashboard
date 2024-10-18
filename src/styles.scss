@@ -13,3 +13,21 @@
 .scroll-panel{
     height: 700px !important;
 }
+
+.ontime{
+    background-color: var(--vz-success-bg-subtle) !important;
+    --vz-text-opacity: 1;
+    color: rgba(var(--vz-success-rgb), var(--vz-text-opacity)) !important;
+}
+
+.early{
+    --vz-text-opacity: 1;
+    color: rgba(var(--vz-info-rgb), var(--vz-text-opacity)) !important;
+    background-color: var(--vz-info-bg-subtle) !important;
+}
+
+.delayed{
+    background-color: var(--vz-danger-bg-subtle) !important;
+    --vz-text-opacity: 1;
+    color: rgba(var(--vz-danger-rgb), var(--vz-text-opacity)) !important;
+}

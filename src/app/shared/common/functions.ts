@@ -1,3 +1,5 @@
+import { TranslocoService } from '@ngneat/transloco';
+
 export function decodeToken(token:any) {
     const _decodeToken = (token:any) => {
       try {
@@ -13,4 +15,9 @@ export function decodeToken(token:any) {
         if (!!curr) acc = { ...acc, ...curr };
         return acc;
       }, Object.create(null));
+  }
+
+
+  export function getTranslate(translocoService: TranslocoService,code:string){
+    return translocoService.translate(code);
   }
