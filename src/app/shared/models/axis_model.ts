@@ -14,6 +14,8 @@ export class AxisModel {
   export class PlanModel {
     id: number = 0
     operationId: number = 0
+    subAxisName: string = ''
+    subAxisId:number = 0
     planNameAR: string = ''
     planNameEN: any
     responsibleOfficer: string = ''

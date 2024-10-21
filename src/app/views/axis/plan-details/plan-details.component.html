@@ -1,99 +1,204 @@
-<div class="offcanvas-header border-bottom">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">{{planModel.planNameAR}}</h5>
-    <button type="button" class="btn btn-ghost-primary waves-effect waves-light material-shadow-none" data-bs-dismiss="offcanvas"> {{ 'go_back' | transloco }} </button>
-</div>
-<div class="offcanvas-body">
+<loading-spinner [loadingText]="loadingText" [loading]="isLoading"></loading-spinner>
 
-    <div class="row">
-        <div class="col-auto layout-rightside-col d-block">
-            <div class="overlay"></div>
-            <div class="layout-rightside">
-                <div class="card rounded-0">
-                    <div class="card-body p-0">
-                        <div class="p-3 mt-2">
-                            <h6 class="text-muted mb-3 text-uppercase fw-semibold">{{'plan_details' | transloco}}
-                            </h6>
-                            <ul class="ps-3 text-muted">
-                                <li class="py-1">
-                                    <span class="text-muted">{{ 'status' | transloco }}
-                                         <span class="float-end">
-                                            <span class="badge" [ngClass]="getPlanStatusClass(planModel.planStatus)">
-                                                {{ 'plan_status_'+planModel.planStatus | transloco }}
-                                            </span>
+<breadcrumb [links]="links" [title]="pageTitle" *ngIf="!isLoading"></breadcrumb>
+
+<div class="row" *ngIf="!isLoading">
+    <div class="col-auto layout-rightside-col d-block">
+        <div class="overlay"></div>
+        <div class="layout-rightside">
+            <div class="card rounded-0">
+                <div class="card-body p-0">
+                    <div class="p-3 mt-2">
+                        <h6 class="text-muted mb-3 text-uppercase fw-semibold">{{'plan_details' | transloco}}
+                        </h6>
+                        <ul class="ps-0 text-muted" style="list-style: none;">
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'date' | transloco }} 
+                                    <span class="float-end text-black">
+                                        {{ planModel.startDate | date:'dd/MM/yyyy'}} - {{ planModel.endDate | date:'dd/MM/yyyy' }}
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'completedCount' | transloco }} 
+                                    <span class="float-end">
+                                        {{ planModel.completedCount }}
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'targetedCount' | transloco }} 
+                                    <span class="float-end">
+                                        {{ planModel.targetedCount }}
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'status' | transloco }}
+                                     <span class="float-end">
+                                        
+                                        <span class="badge" [ngClass]="getPlanStatusClass(planModel.planStatus)">
+                                            {{ 'plan_status_'+planModel.planStatus | transloco }}
                                         </span>
                                     </span>
-                                </li>
-                                <li class="py-1">
-                                    <span class="text-muted">{{ 'date' | transloco }} 
-                                        <span class="float-end">
-                                            {{ planModel.startDate | date:'dd/MM/yyyy'}} - {{ planModel.endDate | date:'dd/MM/yyyy' }}
+                                </span>
+                            </li>
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'timePriod' | transloco }} 
+                                    <span class="float-end">
+                                        <span class="text-success" *ngIf="planModel.planTimelineInWeeks <= 2 || planModel.planTimelineInWeeks > 10">{{ planModel.planTimelineInWeeks }} {{ 'week' | transloco}}</span>
+                                        <span class="text-success" *ngIf="planModel.planTimelineInWeeks > 2 && planModel.planTimelineInWeeks <= 10">{{ planModel.planTimelineInWeeks }} {{ 'weeks' | transloco}}</span>
+                                        -
+                                        <span class="badge" [ngClass]="getStatusOverwrite(planModel.planStatus,planModel.startDate,planModel.endDate)">
+                                            {{getStatusOverwrite(planModel.planStatus,planModel.startDate,planModel.endDate) | transloco}}
                                         </span>
                                     </span>
-                                </li>
-                                <li class="py-1">
-                                    <span class="text-muted">{{ 'timePriod' | transloco }} 
-                                        <span class="float-end">
-                                            <span class="badge" [ngClass]="getStatusOverwrite(planModel.planStatus,planModel.startDate,planModel.endDate)">
-                                                {{getStatusOverwrite(planModel.planStatus,planModel.startDate,planModel.endDate) | transloco}}
-                                            </span>
-                                        </span>
+                                </span>
+                            </li>
+                            
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'total_amount' | transloco }} 
+                                    <span class="float-end">
+                                        {{ planModel.budget | currency: 'د.إ' : 'symbol' : '4.2-2'  }}
                                     </span>
-                                </li>
-                                <li class="py-1">
-                                    <span class="text-muted">{{ 'timeStatus' | transloco }} 
-                                        <span class="float-end">
-                                            <span class="text-success" *ngIf="planModel.planTimelineInWeeks <= 2 || planModel.planTimelineInWeeks > 10">{{ planModel.planTimelineInWeeks }} {{ 'week' | transloco}}</span>
-                                            <span class="text-success" *ngIf="planModel.planTimelineInWeeks > 2 && planModel.planTimelineInWeeks <= 10">{{ planModel.planTimelineInWeeks }} {{ 'weeks' | transloco}}</span>
-                                        </span>
+                                </span>
+                            </li>
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'spent_amount' | transloco }} 
+                                    <span class="float-end">
+                                        <span>{{ planModel.spentAmount | currency: 'د.إ' : 'symbol' : '4.2-2'  }}</span>
                                     </span>
-                                </li>
-                                <li class="py-1">
-                                    <span class="text-muted">{{ 'responsibleOfficer' | transloco }} 
-                                        <span class="float-end">
-                                            {{planModel.responsibleOfficer}}
-                                        </span>
+                                </span>
+                            </li>
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'remaining_amount' | transloco }} 
+                                    <span class="float-end">
+                                        {{ planModel.remainingAmount | currency: 'د.إ' : 'symbol' : '4.2-2'  }}
                                     </span>
-                                </li>
-                                <li class="py-1">
-                                    <span class="text-muted">{{ 'monitoringOfficer' | transloco }} 
-                                        <span class="float-end">
-                                            {{planModel.monitoringOfficer}}
-                                        </span>
+                                </span>
+                            </li>
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'remaining_amount' | transloco }} 
+                                    <span class="float-end">
+                                        {{ planModel.remainingAmount | currency: 'د.إ' : 'symbol' : '4.2-2'  }}
                                     </span>
-                                </li>
-                            </ul>
-                        </div>
+                                </span>
+                            </li>
+                            
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'responsibleOfficer' | transloco }} 
+                                    <span class="float-end text-black">
+                                        {{planModel.responsibleOfficer}}
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="py-1">
+                                <span class="text-muted">{{ 'monitoringOfficer' | transloco }} 
+                                    <span class="float-end text-black">
+                                        {{planModel.monitoringOfficer}}
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!--end row-->
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <h3>{{ 'steps' | transloco }}</h3>
-                </div>
-                <div class="card-body steps-card">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="nav nav-pills flex-column nav-pills-tab custom-verti-nav-pills text-center" role="tablist" aria-orientation="vertical">
-                                <a *ngFor="let step of planModel.steps" [ngClass]="planModel.steps?.indexOf(step)==0?'show active':''" class="nav-link" id="custom-v-pills-home-tab" data-bs-toggle="pill" href="#step_{{step.id}}" role="tab" aria-controls="custom-v-pills-home" aria-selected="true">
-                                    <i class=" ri-arrow-right-s-line fs-20 mb-1 d-none"></i> {{step.stepName}}
-                                </a>
-                            </div>
-                        </div> <!-- end col-->
-                        <div class="col-lg-9">
-                            <div class="tab-content text-muted mt-3 mt-lg-0">
-                                <div *ngFor="let step of planModel.steps; let i = index;" [ngClass]="planModel.steps?.indexOf(step)==0?'show active':''" class="tab-pane fade" id="step_{{step.id}}" role="tabpanel" aria-labelledby="custom-v-pills-home-tab">
-                                    <app-step-details [stepModel]="step"></app-step-details>
-                                </div>
-                                <!--end tab-pane-->
-                            </div>
-                        </div> <!-- end col-->
+    </div>
+    <!--end row-->
+    <div class="col">
+        <div class="timeline">
+            <div *ngFor="let step of planModel.steps;" [ngClass]="timelineAlign" class="timeline-item">
+                <i class="text-muted icon ri-stack-line"></i>
+                <div class="date fs-12">{{ step.startDate | date:'dd/MM/yyyy' }} - {{ step.endDate | date:'dd/MM/yyyy' }}</div>
+                <div class="content">
+                    <h5 class="fs-12">{{ step.stepName }}</h5>
+                    <div class="row p-2">
+                        <div class="col-md-3">
+                            <circle-progress
+                            [percent]="step.completedPercentage"
+                            [radius]="40"
+                            class="circle-progress"
+                            [outerStrokeWidth]="3"
+                            [innerStrokeWidth]="3"
+                            [outerStrokeColor]="getOuterPrecntColor(step.completedPercentage)"
+                            [innerStrokeColor]="getInnerPrecntColor(step.completedPercentage)"
+                            [animation]="true"
+                            [subtitleFontSize]="'9'"
+                            [subtitle]="'completedPercentage' | transloco"
+                            [animationDuration]="300"
+                            ></circle-progress>
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress
+                            [percent]="step.stepWeight"
+                            [radius]="40"
+                            class="circle-progress"
+                            [outerStrokeWidth]="3"
+                            [innerStrokeWidth]="3"
+                            [outerStrokeColor]="getOuterPrecntColor(step.stepWeight)"
+                            [innerStrokeColor]="getInnerPrecntColor(step.stepWeight)"
+                            [animation]="true"
+                            [subtitleFontSize]="'9'"
+                            [subtitle]="'stepWeight' | transloco"
+                            [animationDuration]="300"
+                            ></circle-progress>
+                        </div>
+                        <div class="col-md-12">
+                           
+                        </div>
                     </div>
-                </div>
-            </div>
 
+                    <!-- Buttons with Label -->
+                    <button type="button" (click)="getAttchments(step.id)" data-bs-toggle="modal" data-bs-target="#attchaments" class="btn btn-primary btn-sm btn-label waves-effect waves-light">
+                        <i class="ri-download-2-line label-icon align-middle fs-16 me-2"></i>
+                        {{ 'attchaments' |transloco }}
+                    </button>
+                </div>
+
+                {{changeAlignValue()}}
+            </div>
         </div>
     </div>
 </div>
+
+<div id="attchaments" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">{{ 'attchaments' | transloco }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <loading-spinner [loadingText]="loadingText" [loading]="isAttachmentLoading"></loading-spinner>
+                <div class="vstack gap-2" *ngIf="!isAttachmentLoading">
+                    <div *ngFor="let file of stepEvidences" class="border rounded border-dashed p-2">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm">
+                                    <div class="avatar-title bg-light text-secondary rounded fs-24">
+                                        <i class="ri-folder-zip-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 overflow-hidden">
+                                <h5 class="fs-13 mb-1"><a href="javascript:void(0);" class="text-body text-truncate d-block">{{file.fileName}}</a></h5>
+                                <div>{{ file.fileSize | fileSize }}</div>
+                            </div>
+                            <div class="flex-shrink-0 ms-2">
+                                <div class="d-flex gap-1">
+                                    <button type="button" class="btn btn-icon text-muted btn-sm fs-18 material-shadow-none"><i class="ri-download-2-line"></i></button>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="stepEvidences.length == 0" class="text-center">
+                        {{ 'no_data' | transloco}}
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+

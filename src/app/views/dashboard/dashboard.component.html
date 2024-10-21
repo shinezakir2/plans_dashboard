@@ -1,0 +1,267 @@
+<div class="row">
+    <div class="col">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="fw-medium text-muted mb-0">{{ 'total_axis' | transloco }}</p>
+                        <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                            {{dashboardModel.data.length}}
+                        </h2>
+                    </div>
+                    <div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="avatar-title bg-info-subtle rounded-circle fs-2">
+                                <i class="text-info"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+    <div class="col">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="fw-medium text-muted mb-0">{{ 'total_subaxis' | transloco }}</p>
+                        <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                            {{subAxis.length}}
+                        </h2>
+                    </div>
+                    <div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="avatar-title bg-info-subtle rounded-circle fs-2">
+                                <i class="text-info"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+    <div class="col">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="fw-medium text-muted mb-0">{{ 'total_plans' | transloco }}</p>
+                        <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                            {{allPlans.length}}
+                        </h2>
+                    </div>
+                    <div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="avatar-title bg-info-subtle rounded-circle fs-2">
+                                <i class="text-info"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+    <div class="col">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="fw-medium text-muted mb-0">{{ 'total_completed_plans' | transloco }}</p>
+                        <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                            {{completedPlans}}
+                        </h2>
+                    </div>
+                    <div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="avatar-title bg-success-subtle rounded-circle fs-2">
+                                <i class="text-info"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+    <div class="col">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="fw-medium text-muted mb-0">{{ 'total_pending_plans' | transloco }}</p>
+                        <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                            {{pendingPlans}}
+                        </h2>
+                    </div>
+                    <div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="avatar-title bg-warning-subtle rounded-circle fs-2">
+                                <i class="text-info"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+    <div class="col">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="fw-medium text-muted mb-0">{{ 'total_not_started_plans' | transloco }}</p>
+                        <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                            {{notStartedPlans}}
+                        </h2>
+                    </div>
+                    <div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="avatar-title bg-danger-subtle rounded-circle fs-2">
+                                <i class="text-info"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+</div>
+
+
+<div class="row">
+    
+    <div class="col-xl-4">
+        <div class="card card-height-100">
+            <div class="card-body p-0 pt-5">
+               <!--The content below is only a placeholder and can be replaced.-->
+                <div id="chart">
+                    <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                    [labels]="['total_completed_plans' | transloco,'total_pending_plans' | transloco,'total_not_started_plans' | transloco]"
+                    [responsive]="chartOptions.responsive"
+                    [legend]=""
+                    ></apx-chart>
+                </div>
+            </div><!-- end card body -->
+        </div><!-- end card -->
+    </div><!-- end col -->
+    <div class="col-xl-8">
+        <div class="card card-height-100">
+            <div class="card-header align-items-center d-flex">
+                <h4 class="card-title mb-0 flex-grow-1">{{'plans' | transloco}}</h4>
+                <div class="flex-shrink-0">
+                    <div class="dropdown card-header-dropdown">
+                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fw-semibold text-uppercase fs-12">{{'show_status' | transloco}}:
+                            </span><span class="text-muted">{{ 'plan_status_'+selectedPlanStatus | transloco }}<i class="mdi mdi-chevron-down ms-1"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <button class="dropdown-item text-primary" href="#" (click)="selectedPlanStatus = 0;filterPlans()">{{ 'plan_status_0' | transloco }}</button>
+                            <button class="dropdown-item text-success" href="#" (click)="selectedPlanStatus = 1;filterPlans()">{{ 'plan_status_1' | transloco }}</button>
+                            <button class="dropdown-item text-warning" href="#" (click)="selectedPlanStatus = 2;filterPlans()">{{ 'plan_status_2' | transloco }}</button>
+                            <button class="dropdown-item text-danger" href="#" (click)="selectedPlanStatus = 3;filterPlans()">{{ 'plan_status_3' | transloco }}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row g-4 mb-3">
+                    <div class="col-sm-auto">
+                        <div class="d-flex justify-content-sm-end">
+                            <div class="search-box ms-2">
+                                <input type="text" class="form-control" [(ngModel)]="filterTerm"
+                                (ngModelChange)="filterPlans()" placeholder="{{'search' | transloco}}...">
+                                <i class="ri-search-line search-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive table-card mt-3">
+                    <table class="table table-hover table-borderless table-centered align-middle table-nowrap mb-0">
+                        <thead class="text-muted bg-light-subtle">
+                            <tr>
+                                <th>{{ 'plan' | transloco }}</th>
+                                <th>{{ 'status' | transloco }}</th>
+                                <th>{{ 'targetedCount' | transloco }}</th>
+                                <th>{{ 'completedCount' | transloco }}</th>
+                                <th>{{ 'total_amount' | transloco }}</th>
+                                <th>{{ 'spent_amount' | transloco }}</th>
+                                <th>{{ 'remaining_amount' | transloco }}</th>
+                                <th></th>
+                            </tr>
+                        </thead><!-- end thead -->
+                        <tbody>
+                            <tr *ngFor="let plan of plans | paginate: { itemsPerPage: limit, currentPage: currentPage,totalItems:this.plans.length}; let i = index;">
+                                <td>{{ plan.planNameAR }}</td>
+                                <td>
+                                    <span class="badge" [ngClass]="getPlanStatusClass(plan.planStatus)">{{ 'plan_status_'+plan.planStatus | transloco }}</span>
+                                </td>
+                                <td>{{ plan.targetedCount }}</td>
+                                <td>{{ plan.completedCount }}</td>
+                                <td>{{ plan.budget | currency: 'د.إ' : 'symbol' : '4.2-2' }}</td>
+                                <td>{{ plan.spentAmount | currency: 'د.إ' : 'symbol' : '4.2-2' }}</td>
+                                <td>{{ plan.remainingAmount | currency: 'د.إ' : 'symbol' : '4.2-2' }}</td>
+                                <td><a href="/axis/plan/{{plan.id}}" class="btn btn-sm btn-soft-primary material-shadow-none">{{ 'details' |transloco }}</a></td>
+                            </tr><!-- end -->
+                        </tbody><!-- end tbody -->
+                        <tfoot>
+                            <tr>
+                                <td colspan="8">
+                                    <div *ngIf="this.plans.length == 0" class="row align-items-center" style="height: 50vh;">
+                                        <div class="col-md-12 text-center">
+                                            <img src="assets/images/no-data.svg" />
+                                            <p class="mt-2 fw-100">{{ 'no_data'|transloco }}</p>
+                                        </div>
+                                    </div>
+                                        <!-- end row -->
+
+                                        <div *ngIf="this.plans.length > 0" class="row g-0 text-center text-sm-start align-items-center mb-4">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <p class="mb-sm-0 text-muted">{{'showing'|transloco}} <span class="fw-semibold">{{ currentPage }}</span> {{'to'|transloco}} <span class="fw-semibold">10</span> {{'of'|transloco}} <span class="fw-semibold text-decoration-underline">{{ this.plans.length }}</span> {{'entries'|transloco}}</p>
+                                                </div>
+                                            </div>
+                                            <!-- end col -->
+                                            <div class="col-sm-6">
+                                                <pagination-controls
+                                                class="pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0"
+                                                (pageChange)="onPage($event)"
+                                                 previousLabel="{{'previous' | transloco}}"
+                                                 nextLabel="{{'next' | transloco}}">
+                                               </pagination-controls>
+                                                <ul class="d-none pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0">
+                                                    <li class="page-item disabled">
+                                                        <a href="#" class="page-link">{{ 'previous'|transloco }}</a>
+                                                    </li>
+                                                    <li class="page-item active">
+                                                        <a href="#" class="page-link">1</a>
+                                                    </li>
+                                                    <li class="page-item ">
+                                                        <a href="#" class="page-link">2</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a href="#" class="page-link">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a href="#" class="page-link">4</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a href="#" class="page-link">5</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a href="#" class="page-link">{{ 'next'|transloco }}</a>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table><!-- end table -->
+                </div><!-- end tbody -->
+            </div><!-- end cardbody -->
+        </div><!-- end card -->
+    </div><!-- end col -->
+
+</div><!-- end row -->

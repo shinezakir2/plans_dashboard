@@ -11,7 +11,7 @@
 }
 
 .scroll-panel{
-    height: 700px !important;
+    
 }
 
 .ontime{
@@ -30,4 +30,9 @@
     background-color: var(--vz-danger-bg-subtle) !important;
     --vz-text-opacity: 1;
     color: rgba(var(--vz-danger-rgb), var(--vz-text-opacity)) !important;
+}
+
+.apexcharts-canvas{
+    width: 100% !important;
+    text-align: center !important;
 }

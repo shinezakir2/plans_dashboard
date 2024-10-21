@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
     ngOnInit() {
         //this.primengConfig.ripple = true;
         this.userData$ = this.oidcSecurityService.userData$;
-        console.log('userData',this.userData$);
         // this.oidcSecurityService.checkAuth().subscribe(({ isAuthenticated }) => {
         //   console.log(isAuthenticated);
         //     if(!isAuthenticated){

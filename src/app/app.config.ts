@@ -13,6 +13,7 @@ import { AppService } from './shared/services/app.service';
 import { OperationService } from './shared/services/operation.service';
 import { SharedPipesModule } from './shared/pipes/shared-pipes.module';
 import { AxisService } from './shared/services/axis.service';
+import { DashboardService } from './shared/services/dashboard.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -58,6 +59,7 @@ export const appConfig: ApplicationConfig = {
     AppService,
     OperationService,
     AxisService,
+    DashboardService,
     {
       provide: LOGIN_URL,
       useValue: '/sessions/signin'

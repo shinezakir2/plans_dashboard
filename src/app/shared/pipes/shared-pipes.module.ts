@@ -4,12 +4,14 @@ import { ExcerptPipe } from './excerpt.pipe';
 import { GetValueByKeyPipe } from './get-value-by-key.pipe';
 import { RelativeTimePipe } from './relative-time.pipe';
 import { OrderByPipe } from './orderBy';
+import { FileSizePipe } from './fileSize';
 
 const pipes = [
   ExcerptPipe,
   GetValueByKeyPipe,
   RelativeTimePipe,
-  OrderByPipe
+  OrderByPipe,
+  FileSizePipe
 ];
 
 @NgModule({

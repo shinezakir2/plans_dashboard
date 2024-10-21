@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AxisComponent } from './axis.component';
+import { PlanDetailsComponent } from './plan-details/plan-details.component';
 
 const routes: Routes = [
   {
-    path: 'axis/:axisId',
+    path: 'subaxis/:axisId',
     component: AxisComponent
+  },
+   {
+    path: 'plan/:planId',
+    component: PlanDetailsComponent
   }
 ];
 

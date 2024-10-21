@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { OperationsComponentComponent } from './operations-component/operations-component.component';
+import { OperationDiagramComponent } from './operation-diagram/operation-diagram.component';
 
 const routes: Routes = [
   {
@@ -8,12 +9,8 @@ const routes: Routes = [
     component: OperationsComponentComponent
   },
   {
-    path: 'operations',
-    component: OperationsComponentComponent
-  },
-  {
     path: 'operation/:operationId',
-    component: OperationsComponentComponent
+    component: OperationDiagramComponent
   }
 ];
 

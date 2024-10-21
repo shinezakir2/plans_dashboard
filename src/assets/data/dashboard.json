@@ -1,0 +1,2419 @@
+{
+  "data": [
+    {
+      "id": 13491201,
+      "axisNameEN": "aute Lorem",
+      "axisNameAR": "labore Duis aute",
+      "axisDescEN": "incididunt",
+      "axisDescAR": "incididunt magna dolo",
+      "domain": "ex exercitation nostrud consequat",
+      "count": -16435015,
+      "subAxis": [
+        {
+          "id": 38247975,
+          "subAxisNameEN": "labore ea",
+          "subAxisNameAR": "velit laborum",
+          "subAxisDescEN": "eu cupidatat enim",
+          "budget": 95469285.79356208,
+          "remainingAmount": 7359482.336924687,
+          "spentAmount": -86160833.11946258,
+          "subAxisDescAR": "dolor in labore aliqua ad",
+          "indicators": "proident velit",
+          "planPhases": [
+            {
+              "id": 37,
+              "planNameAR": "الالحقات للروتا 67",
+              "planNameEN": "",
+              "responsibleOfficer": "ادارة التدريب",
+              "monitoringOfficer": "العقيد / محمد خميس",
+              "targetedCount": 67,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-05-15T00:00:00",
+              "endDate": "2024-12-31T00:00:00",
+              "planStatus": 1,
+              "planSteps": [
+                {
+                  "id": 370,
+                  "stepName": "الحاق الدراسين للدورات الروتا (15)",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-15T00:00:00",
+                  "endDate": "2024-05-16T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 371,
+                  "stepName": "الحاق الدراسين للدورات الروتا (39)",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-18T00:00:00",
+                  "endDate": "2024-07-19T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 372,
+                  "stepName": "الحاق الدراسين للدورات الروتا (15)",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-11-16T00:00:00",
+                  "endDate": "2024-11-19T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 373,
+                  "stepName": "مخاطبة ادارة المالية والخدمات بعروض التامين الصحي",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-10-05T00:00:00",
+                  "endDate": "2024-05-16T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 374,
+                  "stepName": "مخاطبة ادارة المالية والخدمات بعروض التامين الصحي",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-10-07T00:00:00",
+                  "endDate": "2024-07-19T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 375,
+                  "stepName": "مخاطبة ادارة المالية والخدمات بعروض التامين الصحي",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-10-11T00:00:00",
+                  "endDate": "2024-11-19T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 376,
+                  "stepName": "الحاق للعسكريين للدورات  (120)",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-03-19T00:00:00",
+                  "endDate": "2024-03-21T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 5
+                },
+                {
+                  "id": 377,
+                  "stepName": "الحاق للعسكريين للدورات  (250)",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-23T00:00:00",
+                  "endDate": "2024-07-26T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 378,
+                  "stepName": "الحاق للعسكريين للدورات  (197)",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-11-26T00:00:00",
+                  "endDate": "2024-11-29T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 379,
+                  "stepName": "تدريب الموظفين ( شركة COSEM )",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-01-01T00:00:00",
+                  "endDate": "2024-03-31T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 5
+                },
+                {
+                  "id": 380,
+                  "stepName": "تدريب الموظفين ( شركة COSEM )",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-01-04T00:00:00",
+                  "endDate": "2024-06-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 381,
+                  "stepName": "تدريب الموظفين ( شركة COSEM )",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-01-07T00:00:00",
+                  "endDate": "2024-09-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 382,
+                  "stepName": "تدريب الموظفين ( شركة COSEM )",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-10-01T00:00:00",
+                  "endDate": "2024-12-31T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 118,
+              "planTimelineInWeeks": 32
+            }
+          ],
+          "plansCount": -92114227,
+          "summary": [
+            {
+              "value": "<Error: Too many levels of nesting to fake this schema>"
+            },
+            {
+              "value": "<Error: Too many levels of nesting to fake this schema>"
+            }
+          ],
+          "mainAxisNameAR": "irure reprehenderit"
+        },
+        {
+          "id": 66191885,
+          "subAxisNameEN": "anim in ut",
+          "subAxisNameAR": "nostrud off",
+          "subAxisDescEN": "magna et",
+          "budget": 95642461.55564663,
+          "remainingAmount": 36795269.13516873,
+          "spentAmount": -63979607.064067245,
+          "subAxisDescAR": "cul",
+          "indicators": "mollit in dolore dolor",
+          "planPhases": [
+            {
+              "id": 34,
+              "planNameAR": "إستقطاب الدارسيين ( الروتا) - المرحلة الأولى",
+              "planNameEN": 0,
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 15,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 15,
+              "mainGoalAR": 0,
+              "mainGoalEN": 0,
+              "startDate": "2024-01-01T00:00:00",
+              "endDate": "2024-05-16T00:00:00",
+              "planStatus": 2,
+              "planSteps": [
+                {
+                  "id": 334,
+                  "stepName": "ـــ موقع الهيئة ـــ لنك ان ــ التنسيق مع دائرة التمكين الحكومي بشأن تسجيل المرشحين لديهم ـــ التقديم المباشر ـــ  فرز الطلبات",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-01-01T00:00:00",
+                  "endDate": "2024-01-05T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 5
+                },
+                {
+                  "id": 335,
+                  "stepName": "إجراء المقابلات الأولية للمجموعة الأولى عدد (15) دارس",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-01-08T00:00:00",
+                  "endDate": "2024-03-12T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 5
+                },
+                {
+                  "id": 336,
+                  "stepName": "إجراء إختبارات اللغة الإنجليزية",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-03-13T00:00:00",
+                  "endDate": "2024-03-29T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 5
+                },
+                {
+                  "id": 337,
+                  "stepName": "اعلام المرشح بتاريخ الفحص الطبي من خلال ارسال رساله نصية",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-04-01T00:00:00",
+                  "endDate": "2024-04-03T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 338,
+                  "stepName": "التقديم على الموافقات الأمنية لجميع المرشحين المقبولين مبدئيا",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-04-04T00:00:00",
+                  "endDate": "2024-04-05T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 339,
+                  "stepName": "إجراء إختبار اللياقة البدنية",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-04-08T00:00:00",
+                  "endDate": "2024-04-19T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 340,
+                  "stepName": "إجراء إختبار IQ",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-04-22T00:00:00",
+                  "endDate": "2024-04-24T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 341,
+                  "stepName": "تعبئة استمارة لجنة المقابلات",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-04-25T00:00:00",
+                  "endDate": "2024-04-26T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 342,
+                  "stepName": "تحديد موعد لمقابله المرشحين من قبل لجنة مقابلات الدارسين",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-04-29T00:00:00",
+                  "endDate": "2024-05-01T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 343,
+                  "stepName": "العرض على اللجنة الرئيسية للدارسين و تحديد المجتازين في المقابلة",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-02T00:00:00",
+                  "endDate": "2024-05-07T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 344,
+                  "stepName": "حصر توصيات اللجنة وتوقيع مذكرات المقبولين من قبل معالي القائد العام للشرطة",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-08T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 345,
+                  "stepName": ". اعلام المرشحين المقبولين لتقديم الاستقاله في حال كانوا على رأس عملهم.",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-10T00:00:00",
+                  "endDate": "2024-05-10T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 346,
+                  "stepName": "إعداد  قرار التعيين للعرض على معالي / القائد العام",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-13T00:00:00",
+                  "endDate": "2024-05-13T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 347,
+                  "stepName": "الاجتماع مع جميع المقبولين واعطائهم ورشة أمنية حضورية.",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-14T00:00:00",
+                  "endDate": "2024-05-14T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 348,
+                  "stepName": ". توقيع جميع المرشحين على تعهد ابتعاث دارس.",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-14T00:00:00",
+                  "endDate": "2024-05-14T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 349,
+                  "stepName": "جمع بيانات قياسات البدل العسكرية والتجهيزات والتطعيمات والوجبات الغذائية لجميع المرشحين وارسالها لفريق الأكاديمية.",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-14T00:00:00",
+                  "endDate": "2024-05-14T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 350,
+                  "stepName": "حضور ورشة افتراضية مع فريق أكاديمية الدفاع المدني السنغافوري لتوعية الطلاب بالقوانين والمسؤوليات والواجبات وغيرها من المحاور ذات الصة .",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-15T00:00:00",
+                  "endDate": "2024-05-15T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 351,
+                  "stepName": "اصدار قرارات التعيين لجميع المرشحين المقبولين.",
+                  "stepDescription": 0,
+                  "stepWeight": 5,
+                  "startDate": "2024-05-16T00:00:00",
+                  "endDate": "2024-05-16T00:00:00",
+                  "stepEvidence": 0,
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 254,
+              "planTimelineInWeeks": 19
+            },
+            {
+              "id": 35,
+              "planNameAR": "إستقطاب الدارسيين ( الروتا) - المرحلة الثانية",
+              "planNameEN": "",
+              "responsibleOfficer": "العقيد علي الراشدي",
+              "monitoringOfficer": 0,
+              "targetedCount": 39,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 30,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-05-17T00:00:00",
+              "endDate": "2024-07-17T00:00:00",
+              "planStatus": 2,
+              "planSteps": [
+                {
+                  "id": 352,
+                  "stepName": "ـــ موقع الهيئة ـــ لنك ان ــ التنسيق مع دائرة التمكين الحكومي بشأن تسجيل المرشحين لديهم ـــ التقديم المباشر ـــ  فرز الطلبات",
+                  "stepDescription": "ـــ موقع الهيئة ـــ لنك ان ــ التنسيق مع دائرة التمكين الحكومي بشأن تسجيل المرشحين لديهم ـــ التقديم المباشر ـــ  فرز الطلبات",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-17T00:00:00",
+                  "endDate": "2024-05-20T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 5
+                },
+                {
+                  "id": 353,
+                  "stepName": "إجراء المقابلات الأولية للمجموعة الأولى عدد (15) دارس",
+                  "stepDescription": "إجراء المقابلات الأولية للمجموعة الأولى عدد (15) دارس",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-21T00:00:00",
+                  "endDate": "2024-05-31T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 5
+                },
+                {
+                  "id": 354,
+                  "stepName": "إجراء إختبارات اللغة الإنجليزية",
+                  "stepDescription": "إجراء إختبارات اللغة الإنجليزية",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-03T00:00:00",
+                  "endDate": "2024-06-07T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 5
+                },
+                {
+                  "id": 355,
+                  "stepName": "اعلام المرشح بتاريخ الفحص الطبي من خلال ارسال رساله نصية",
+                  "stepDescription": "اعلام المرشح بتاريخ الفحص الطبي من خلال ارسال رساله نصية",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-10T00:00:00",
+                  "endDate": "2024-06-11T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 356,
+                  "stepName": "التقديم على الموافقات الأمنية لجميع المرشحين المقبولين مبدئيا",
+                  "stepDescription": "التقديم على الموافقات الأمنية لجميع المرشحين المقبولين مبدئيا",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-12T00:00:00",
+                  "endDate": "2024-06-13T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 357,
+                  "stepName": "إجراء إختبار اللياقة البدنية",
+                  "stepDescription": "إجراء إختبار اللياقة البدنية",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-14T00:00:00",
+                  "endDate": "2024-06-21T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 358,
+                  "stepName": "إجراء إختبار IQ",
+                  "stepDescription": "إجراء إختبار IQ",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-24T00:00:00",
+                  "endDate": "2024-06-26T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 359,
+                  "stepName": "تعبئة استمارة لجنة المقابلات",
+                  "stepDescription": "تعبئة استمارة لجنة المقابلات",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-27T00:00:00",
+                  "endDate": "2024-06-28T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 360,
+                  "stepName": "تحديد موعد لمقابله المرشحين من قبل لجنة مقابلات الدارسين",
+                  "stepDescription": "تحديد موعد لمقابله المرشحين من قبل لجنة مقابلات الدارسين",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-01T00:00:00",
+                  "endDate": "2024-07-02T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 361,
+                  "stepName": "العرض على اللجنة الرئيسية للدارسين و تحديد المجتازين في المقابلة",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-02T00:00:00",
+                  "endDate": "2024-05-07T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 362,
+                  "stepName": "حصر توصيات اللجنة وتوقيع مذكرات المقبولين من قبل معالي القائد العام للشرطة",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-08T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 363,
+                  "stepName": ". اعلام المرشحين المقبولين لتقديم الاستقاله في حال كانوا على رأس عملهم.",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-10T00:00:00",
+                  "endDate": "2024-05-10T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 364,
+                  "stepName": "إعداد  قرار التعيين للعرض على معالي / القائد العام",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-13T00:00:00",
+                  "endDate": "2024-05-13T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 365,
+                  "stepName": "الاجتماع مع جميع المقبولين واعطائهم ورشة أمنية حضورية.",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-14T00:00:00",
+                  "endDate": "2024-05-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 366,
+                  "stepName": ". توقيع جميع المرشحين على تعهد ابتعاث دارس.",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-14T00:00:00",
+                  "endDate": "2024-05-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 367,
+                  "stepName": "جمع بيانات قياسات البدل العسكرية والتجهيزات والتطعيمات والوجبات الغذائية لجميع المرشحين وارسالها لفريق الأكاديمية.",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-14T00:00:00",
+                  "endDate": "2024-05-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 368,
+                  "stepName": "حضور ورشة افتراضية مع فريق أكاديمية الدفاع المدني السنغافوري لتوعية الطلاب بالقوانين والمسؤوليات والواجبات وغيرها من المحاور ذات الصة .",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-15T00:00:00",
+                  "endDate": "2024-05-15T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 369,
+                  "stepName": "اصدار قرارات التعيين لجميع المرشحين المقبولين.",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-16T00:00:00",
+                  "endDate": "2024-05-16T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 316,
+              "planTimelineInWeeks": 8
+            },
+            {
+              "id": 36,
+              "planNameAR": "إستقطاب الدارسيين ( الروتا) - المرحلة الثالثة",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 15,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2023-10-31T00:00:00",
+              "endDate": "2024-03-05T00:00:00",
+              "planStatus": 2,
+              "planSteps": [],
+              "summary": [],
+              "daysLeft": 182,
+              "planTimelineInWeeks": 18
+            }
+          ],
+          "plansCount": 2532333,
+          "summary": [
+            {
+              "value": "<Error: Too many levels of nesting to fake this schema>"
+            },
+            {
+              "value": "<Error: Too many levels of nesting to fake this schema>"
+            }
+          ],
+          "mainAxisNameAR": "laboris id"
+        }
+      ]
+    },
+    {
+      "id": 11848184,
+      "axisNameEN": "dolor laborum ipsum",
+      "axisNameAR": "do cillum",
+      "axisDescEN": "nisi proident",
+      "axisDescAR": "officia ut sunt aliqua",
+      "domain": "sed aute nisi dolor adipisicing",
+      "count": 30129919,
+      "subAxis": [
+        {
+          "id": 55647559,
+          "subAxisNameEN": "et",
+          "subAxisNameAR": "consectetur nisi laborum",
+          "subAxisDescEN": "ut",
+          "budget": -5919785.817477271,
+          "remainingAmount": 34437670.511615425,
+          "spentAmount": 25323245.436338305,
+          "subAxisDescAR": "in ex",
+          "indicators": "exercitation enim",
+          "planPhases": [
+            {
+              "id": 38,
+              "planNameAR": "تعيين عسكريين 120",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 120,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 120,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-01-01T00:00:00",
+              "endDate": "2024-03-18T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 383,
+                  "stepName": "الإعلان عن الوظائف الشاغرة ( الموقع الرسمي ) والتنسيق مع دائرة التمكين الحكومي",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-01-01T00:00:00",
+                  "endDate": "2024-01-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 384,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-01-15T00:00:00",
+                  "endDate": "2024-01-22T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 385,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 120",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-01-23T00:00:00",
+                  "endDate": "2024-02-22T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 15
+                },
+                {
+                  "id": 386,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-02-23T00:00:00",
+                  "endDate": "2024-03-01T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 15
+                },
+                {
+                  "id": 387,
+                  "stepName": "تحديد المقبولين لتعيين 120",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-02T00:00:00",
+                  "endDate": "2024-03-03T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 388,
+                  "stepName": "إجراء الفحص الطبي لتعيين 120",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-07T00:00:00",
+                  "endDate": "2024-03-10T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 389,
+                  "stepName": "حصر المجتازين لتعيين 120",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-11T00:00:00",
+                  "endDate": "2024-03-12T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 390,
+                  "stepName": "الحاق العسكريين للدورات",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-13T00:00:00",
+                  "endDate": "2024-03-15T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 391,
+                  "stepName": "اصدار قرار التعيين للملتحقين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-16T00:00:00",
+                  "endDate": "2024-03-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 195,
+              "planTimelineInWeeks": 11
+            },
+            {
+              "id": 39,
+              "planNameAR": "تعيين عسكريين 250",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 250,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-05-09T00:00:00",
+              "endDate": "2024-05-09T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 392,
+                  "stepName": "الإعلان عن الوظائف الشاغرة ( الموقع الرسمي ) والتنسيق مع دائرة التمكين الحكومي",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 393,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 394,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 250",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 15
+                },
+                {
+                  "id": 395,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 15
+                },
+                {
+                  "id": 396,
+                  "stepName": "تحديد المقبولين لتعيين 250",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 397,
+                  "stepName": "إجراء الفحص الطبي لتعيين 250",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 398,
+                  "stepName": "حصر المجتازين لتعيين 250",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 399,
+                  "stepName": "الحاق العسكريين للدورات",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 400,
+                  "stepName": "اصدار قرار التعيين للملتحقين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 247,
+              "planTimelineInWeeks": 0
+            },
+            {
+              "id": 40,
+              "planNameAR": "تعيين عسكريين 197",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 197,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-05-09T00:00:00",
+              "endDate": "2024-05-09T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 401,
+                  "stepName": "الإعلان عن الوظائف الشاغرة ( الموقع الرسمي ) والتنسيق مع دائرة التمكين الحكومي",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 402,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 403,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 197",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 404,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 405,
+                  "stepName": "تحديد المقبولين لتعيين 197",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 406,
+                  "stepName": "إجراء الفحص الطبي لتعيين 197",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 407,
+                  "stepName": "حصر المجتازين لتعيين 197",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 408,
+                  "stepName": "الحاق العسكريين للدورات",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 409,
+                  "stepName": "اصدار قرار التعيين للملتحقين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 247,
+              "planTimelineInWeeks": 0
+            },
+            {
+              "id": 41,
+              "planNameAR": "تعيين المدنيين - 42",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 42,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-01-01T00:00:00",
+              "endDate": "2024-09-30T00:00:00",
+              "planStatus": 2,
+              "planSteps": [
+                {
+                  "id": 410,
+                  "stepName": "التنسيق مع دائرة التمكين الحكومي بشأن تسجيل المرشحين لديهم 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-01-01T00:00:00",
+                  "endDate": "2024-01-02T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 411,
+                  "stepName": "استلام قائمة المرشحين من دائرة التمكين الحكومي  42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-02-02T00:00:00",
+                  "endDate": "2024-02-12T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 412,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-02-13T00:00:00",
+                  "endDate": "2024-04-28T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 413,
+                  "stepName": "تحديد الإدارات المستفيدة والشريحة الوظيفية  42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-04-29T00:00:00",
+                  "endDate": "2024-05-05T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 414,
+                  "stepName": "توزيع المرشحين على الادارات المعنية 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-05T00:00:00",
+                  "endDate": "2024-10-05T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 415,
+                  "stepName": "موافاتنا نتائج التقييم الخاصة بالمرشحين ما بعد فترة التجربة (من شهر الى 6 شهور) 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-11-05T00:00:00",
+                  "endDate": "2024-11-06T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 416,
+                  "stepName": "تحديد المرشحين المجتازين لفنرة التجربة  من الادارات 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-12-06T00:00:00",
+                  "endDate": "2024-06-20T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 417,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-21T00:00:00",
+                  "endDate": "2024-07-20T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 418,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-21T00:00:00",
+                  "endDate": "2024-08-01T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 419,
+                  "stepName": "تحديد المقبولين لتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-08-02T00:00:00",
+                  "endDate": "2024-08-04T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 420,
+                  "stepName": "إجراء الفحص الطبي لتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-05T00:00:00",
+                  "endDate": "2024-08-22T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 421,
+                  "stepName": "حصر المجتازين لتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-23T00:00:00",
+                  "endDate": "2024-08-25T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 422,
+                  "stepName": "طلب الاستقاله من المجتازين للتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-08-26T00:00:00",
+                  "endDate": "2024-09-26T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 423,
+                  "stepName": "اصدار قرار التعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-09-27T00:00:00",
+                  "endDate": "2024-09-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 26,
+              "planTimelineInWeeks": 39
+            },
+            {
+              "id": 42,
+              "planNameAR": "تعيين المسعفين (207) اساسي , متوسط",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 207,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-01-01T00:00:00",
+              "endDate": "2024-09-30T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 424,
+                  "stepName": "الإعلان عن الوظائف الشاغرة ( الموقع الرسمي - لينكد إن )  المسعفيين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-01-01T00:00:00",
+                  "endDate": "2024-01-02T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 425,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-02-02T00:00:00",
+                  "endDate": "2024-02-04T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 426,
+                  "stepName": "مخاطبة اللجان الفرعية - المسعفين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-04T00:00:00",
+                  "endDate": "2024-04-07T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 427,
+                  "stepName": "تحديد المقبولين من قبل اللجنة الفرعية  (الإسعاف)",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-04-08T00:00:00",
+                  "endDate": "2024-06-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 428,
+                  "stepName": "السير في اجراءات اصدار التصاريح الطبية بالتنسيق مع هيئة الصحة",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-01T00:00:00",
+                  "endDate": "2024-07-05T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 429,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 278",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-06T00:00:00",
+                  "endDate": "2024-07-15T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 430,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-16T00:00:00",
+                  "endDate": "2024-07-22T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 431,
+                  "stepName": "تحديد المقبولين لتعيين 278",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-23T00:00:00",
+                  "endDate": "2024-07-25T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 432,
+                  "stepName": "إجراء الفحص الطبي لتعيين 278",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-26T00:00:00",
+                  "endDate": "2024-08-10T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 433,
+                  "stepName": "حصر المجتازين لتعيين 278",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-11T00:00:00",
+                  "endDate": "2024-08-15T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 434,
+                  "stepName": "طلب الاستقاله من المجتازين للتعيين",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-16T00:00:00",
+                  "endDate": "2024-09-16T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 435,
+                  "stepName": "اجراء معاملات الجوازات والاقامات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-17T00:00:00",
+                  "endDate": "2024-09-19T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 436,
+                  "stepName": "اصدار التاشيرات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-20T00:00:00",
+                  "endDate": "2024-09-25T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 437,
+                  "stepName": "اصدار قرار التعيين",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-26T00:00:00",
+                  "endDate": "2024-09-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 26,
+              "planTimelineInWeeks": 39
+            },
+            {
+              "id": 43,
+              "planNameAR": "المسعف المتقدم 71",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "مدير إدارة التخطيط الاستراتيجي والتطوير المؤسسي",
+              "targetedCount": 71,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-05-15T00:00:00",
+              "endDate": "2024-09-30T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 438,
+                  "stepName": "الإعلان عن الوظائف الشاغرة  عن طريق ( سفارة الدولة  )   71",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-15T00:00:00",
+                  "endDate": "2024-05-24T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 439,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-27T00:00:00",
+                  "endDate": "2024-06-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 440,
+                  "stepName": "قرار ايفاد الجنة المقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-27T00:00:00",
+                  "endDate": "2024-06-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 441,
+                  "stepName": "الاختبار النظري للمرشحين في بلد الايفاد",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-27T00:00:00",
+                  "endDate": "2024-06-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 442,
+                  "stepName": "الايفاد والمقابلات لجنة التعيين",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-15T00:00:00",
+                  "endDate": "2024-06-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 443,
+                  "stepName": "تحديد المقبولين لتعيين 71 مسعف متقدم",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-19T00:00:00",
+                  "endDate": "2024-07-03T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 444,
+                  "stepName": "إجراء الفحوصات الطبية في بلد الايفاد",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-04T00:00:00",
+                  "endDate": "2024-07-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 445,
+                  "stepName": "اجراءات تقرير ( الداتا فلو )  واجراءات ترخيص مزاولة المهنة",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-04T00:00:00",
+                  "endDate": "2024-07-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 446,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 71 مسعف متقدم",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-19T00:00:00",
+                  "endDate": "2024-07-24T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 447,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-25T00:00:00",
+                  "endDate": "2024-08-02T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 448,
+                  "stepName": "تحديد المقبولين لتعيين 71 مسعف متقدم",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-05T00:00:00",
+                  "endDate": "2024-08-07T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 449,
+                  "stepName": "إجراء الفحص الطبي لتعيين 71 مسعف متقدم بالدولة",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-08T00:00:00",
+                  "endDate": "2024-08-16T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 450,
+                  "stepName": "حصر المجتازين لتعيين 71 مسعف متقدم",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-08-17T00:00:00",
+                  "endDate": "2024-08-17T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 451,
+                  "stepName": "طلب الاستقاله من المجتازين للتعيين",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-18T00:00:00",
+                  "endDate": "2024-09-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 452,
+                  "stepName": "اجراء معاملات الجوازات والاقامات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-19T00:00:00",
+                  "endDate": "2024-09-20T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 453,
+                  "stepName": "اصدار التاشيرات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-21T00:00:00",
+                  "endDate": "2024-09-25T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 454,
+                  "stepName": "اصدار قرار التعيين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-09-26T00:00:00",
+                  "endDate": "2024-09-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 26,
+              "planTimelineInWeeks": 19
+            }
+          ],
+          "plansCount": -28337424,
+          "summary": [
+            {
+              "value": "<Error: Too many levels of nesting to fake this schema>"
+            },
+            {
+              "value": "<Error: Too many levels of nesting to fake this schema>"
+            }
+          ],
+          "mainAxisNameAR": "labore aliquip nisi exercitation sint"
+        },
+        {
+          "id": -6267576,
+          "subAxisNameEN": "incididun",
+          "subAxisNameAR": "deserunt minim Duis officia",
+          "subAxisDescEN": "ut irure ad",
+          "budget": 79876909.17969266,
+          "remainingAmount": -20977542.4919644,
+          "spentAmount": -19603483.467260003,
+          "subAxisDescAR": "reprehenderit ad",
+          "indicators": "velit",
+          "planPhases": [
+            {
+              "id": 38,
+              "planNameAR": "تعيين عسكريين 120",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 120,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 120,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-01-01T00:00:00",
+              "endDate": "2024-03-18T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 383,
+                  "stepName": "الإعلان عن الوظائف الشاغرة ( الموقع الرسمي ) والتنسيق مع دائرة التمكين الحكومي",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-01-01T00:00:00",
+                  "endDate": "2024-01-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 384,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-01-15T00:00:00",
+                  "endDate": "2024-01-22T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 385,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 120",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-01-23T00:00:00",
+                  "endDate": "2024-02-22T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 15
+                },
+                {
+                  "id": 386,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-02-23T00:00:00",
+                  "endDate": "2024-03-01T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 15
+                },
+                {
+                  "id": 387,
+                  "stepName": "تحديد المقبولين لتعيين 120",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-02T00:00:00",
+                  "endDate": "2024-03-03T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 388,
+                  "stepName": "إجراء الفحص الطبي لتعيين 120",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-07T00:00:00",
+                  "endDate": "2024-03-10T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 389,
+                  "stepName": "حصر المجتازين لتعيين 120",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-11T00:00:00",
+                  "endDate": "2024-03-12T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 390,
+                  "stepName": "الحاق العسكريين للدورات",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-13T00:00:00",
+                  "endDate": "2024-03-15T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 391,
+                  "stepName": "اصدار قرار التعيين للملتحقين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-16T00:00:00",
+                  "endDate": "2024-03-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 195,
+              "planTimelineInWeeks": 11
+            },
+            {
+              "id": 39,
+              "planNameAR": "تعيين عسكريين 250",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 250,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-05-09T00:00:00",
+              "endDate": "2024-05-09T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 392,
+                  "stepName": "الإعلان عن الوظائف الشاغرة ( الموقع الرسمي ) والتنسيق مع دائرة التمكين الحكومي",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 393,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 394,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 250",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 15
+                },
+                {
+                  "id": 395,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 15
+                },
+                {
+                  "id": 396,
+                  "stepName": "تحديد المقبولين لتعيين 250",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 397,
+                  "stepName": "إجراء الفحص الطبي لتعيين 250",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 398,
+                  "stepName": "حصر المجتازين لتعيين 250",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 399,
+                  "stepName": "الحاق العسكريين للدورات",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 400,
+                  "stepName": "اصدار قرار التعيين للملتحقين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 247,
+              "planTimelineInWeeks": 0
+            },
+            {
+              "id": 40,
+              "planNameAR": "تعيين عسكريين 197",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 197,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-05-09T00:00:00",
+              "endDate": "2024-05-09T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 401,
+                  "stepName": "الإعلان عن الوظائف الشاغرة ( الموقع الرسمي ) والتنسيق مع دائرة التمكين الحكومي",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 402,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 403,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 197",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 404,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 15,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 405,
+                  "stepName": "تحديد المقبولين لتعيين 197",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 406,
+                  "stepName": "إجراء الفحص الطبي لتعيين 197",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 407,
+                  "stepName": "حصر المجتازين لتعيين 197",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 408,
+                  "stepName": "الحاق العسكريين للدورات",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 409,
+                  "stepName": "اصدار قرار التعيين للملتحقين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-05-09T00:00:00",
+                  "endDate": "2024-05-09T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 247,
+              "planTimelineInWeeks": 0
+            },
+            {
+              "id": 41,
+              "planNameAR": "تعيين المدنيين - 42",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 42,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-01-01T00:00:00",
+              "endDate": "2024-09-30T00:00:00",
+              "planStatus": 2,
+              "planSteps": [
+                {
+                  "id": 410,
+                  "stepName": "التنسيق مع دائرة التمكين الحكومي بشأن تسجيل المرشحين لديهم 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-01-01T00:00:00",
+                  "endDate": "2024-01-02T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 411,
+                  "stepName": "استلام قائمة المرشحين من دائرة التمكين الحكومي  42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-02-02T00:00:00",
+                  "endDate": "2024-02-12T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 412,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-02-13T00:00:00",
+                  "endDate": "2024-04-28T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 413,
+                  "stepName": "تحديد الإدارات المستفيدة والشريحة الوظيفية  42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-04-29T00:00:00",
+                  "endDate": "2024-05-05T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 414,
+                  "stepName": "توزيع المرشحين على الادارات المعنية 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-05T00:00:00",
+                  "endDate": "2024-10-05T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 415,
+                  "stepName": "موافاتنا نتائج التقييم الخاصة بالمرشحين ما بعد فترة التجربة (من شهر الى 6 شهور) 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-11-05T00:00:00",
+                  "endDate": "2024-11-06T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 416,
+                  "stepName": "تحديد المرشحين المجتازين لفنرة التجربة  من الادارات 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-12-06T00:00:00",
+                  "endDate": "2024-06-20T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 417,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-21T00:00:00",
+                  "endDate": "2024-07-20T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 418,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-21T00:00:00",
+                  "endDate": "2024-08-01T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 419,
+                  "stepName": "تحديد المقبولين لتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-08-02T00:00:00",
+                  "endDate": "2024-08-04T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 420,
+                  "stepName": "إجراء الفحص الطبي لتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-05T00:00:00",
+                  "endDate": "2024-08-22T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 421,
+                  "stepName": "حصر المجتازين لتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-23T00:00:00",
+                  "endDate": "2024-08-25T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 422,
+                  "stepName": "طلب الاستقاله من المجتازين للتعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-08-26T00:00:00",
+                  "endDate": "2024-09-26T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 423,
+                  "stepName": "اصدار قرار التعيين 42 مدني",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-09-27T00:00:00",
+                  "endDate": "2024-09-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 26,
+              "planTimelineInWeeks": 39
+            },
+            {
+              "id": 42,
+              "planNameAR": "تعيين المسعفين (207) اساسي , متوسط",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "العقيد علي الراشدي",
+              "targetedCount": 207,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-01-01T00:00:00",
+              "endDate": "2024-09-30T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 424,
+                  "stepName": "الإعلان عن الوظائف الشاغرة ( الموقع الرسمي - لينكد إن )  المسعفيين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-01-01T00:00:00",
+                  "endDate": "2024-01-02T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 425,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-02-02T00:00:00",
+                  "endDate": "2024-02-04T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 426,
+                  "stepName": "مخاطبة اللجان الفرعية - المسعفين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-03-04T00:00:00",
+                  "endDate": "2024-04-07T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 10
+                },
+                {
+                  "id": 427,
+                  "stepName": "تحديد المقبولين من قبل اللجنة الفرعية  (الإسعاف)",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-04-08T00:00:00",
+                  "endDate": "2024-06-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 428,
+                  "stepName": "السير في اجراءات اصدار التصاريح الطبية بالتنسيق مع هيئة الصحة",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-01T00:00:00",
+                  "endDate": "2024-07-05T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 429,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 278",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-06T00:00:00",
+                  "endDate": "2024-07-15T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 430,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-16T00:00:00",
+                  "endDate": "2024-07-22T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 431,
+                  "stepName": "تحديد المقبولين لتعيين 278",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-23T00:00:00",
+                  "endDate": "2024-07-25T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 432,
+                  "stepName": "إجراء الفحص الطبي لتعيين 278",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-26T00:00:00",
+                  "endDate": "2024-08-10T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 433,
+                  "stepName": "حصر المجتازين لتعيين 278",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-11T00:00:00",
+                  "endDate": "2024-08-15T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 434,
+                  "stepName": "طلب الاستقاله من المجتازين للتعيين",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-16T00:00:00",
+                  "endDate": "2024-09-16T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 435,
+                  "stepName": "اجراء معاملات الجوازات والاقامات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-17T00:00:00",
+                  "endDate": "2024-09-19T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 436,
+                  "stepName": "اصدار التاشيرات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-20T00:00:00",
+                  "endDate": "2024-09-25T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 437,
+                  "stepName": "اصدار قرار التعيين",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-26T00:00:00",
+                  "endDate": "2024-09-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 26,
+              "planTimelineInWeeks": 39
+            },
+            {
+              "id": 43,
+              "planNameAR": "المسعف المتقدم 71",
+              "planNameEN": "",
+              "responsibleOfficer": "قسم الإختيار والتعيين",
+              "monitoringOfficer": "مدير إدارة التخطيط الاستراتيجي والتطوير المؤسسي",
+              "targetedCount": 71,
+              "remainingAmount": 0,
+              "spentAmount": 0,
+              "budget": 0,
+              "completedCount": 0,
+              "mainGoalAR": "",
+              "mainGoalEN": "",
+              "startDate": "2024-05-15T00:00:00",
+              "endDate": "2024-09-30T00:00:00",
+              "planStatus": 3,
+              "planSteps": [
+                {
+                  "id": 438,
+                  "stepName": "الإعلان عن الوظائف الشاغرة  عن طريق ( سفارة الدولة  )   71",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-15T00:00:00",
+                  "endDate": "2024-05-24T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 439,
+                  "stepName": "فرز الطلبات حسب الشروط والمعايير",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-27T00:00:00",
+                  "endDate": "2024-06-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 440,
+                  "stepName": "قرار ايفاد الجنة المقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-27T00:00:00",
+                  "endDate": "2024-06-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 441,
+                  "stepName": "الاختبار النظري للمرشحين في بلد الايفاد",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-05-27T00:00:00",
+                  "endDate": "2024-06-14T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 442,
+                  "stepName": "الايفاد والمقابلات لجنة التعيين",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-15T00:00:00",
+                  "endDate": "2024-06-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 443,
+                  "stepName": "تحديد المقبولين لتعيين 71 مسعف متقدم",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-06-19T00:00:00",
+                  "endDate": "2024-07-03T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 444,
+                  "stepName": "إجراء الفحوصات الطبية في بلد الايفاد",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-04T00:00:00",
+                  "endDate": "2024-07-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 445,
+                  "stepName": "اجراءات تقرير ( الداتا فلو )  واجراءات ترخيص مزاولة المهنة",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-07-04T00:00:00",
+                  "endDate": "2024-07-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 446,
+                  "stepName": "طلب الموافقات أمنية  لتعيين 71 مسعف متقدم",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-19T00:00:00",
+                  "endDate": "2024-07-24T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 447,
+                  "stepName": "عرض على اللجنة المشتركة والمقابلات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-07-25T00:00:00",
+                  "endDate": "2024-08-02T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 448,
+                  "stepName": "تحديد المقبولين لتعيين 71 مسعف متقدم",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-05T00:00:00",
+                  "endDate": "2024-08-07T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 449,
+                  "stepName": "إجراء الفحص الطبي لتعيين 71 مسعف متقدم بالدولة",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-08T00:00:00",
+                  "endDate": "2024-08-16T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 450,
+                  "stepName": "حصر المجتازين لتعيين 71 مسعف متقدم",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-08-17T00:00:00",
+                  "endDate": "2024-08-17T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 451,
+                  "stepName": "طلب الاستقاله من المجتازين للتعيين",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-08-18T00:00:00",
+                  "endDate": "2024-09-18T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 452,
+                  "stepName": "اجراء معاملات الجوازات والاقامات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-19T00:00:00",
+                  "endDate": "2024-09-20T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 453,
+                  "stepName": "اصدار التاشيرات",
+                  "stepDescription": "",
+                  "stepWeight": 5,
+                  "startDate": "2024-09-21T00:00:00",
+                  "endDate": "2024-09-25T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                },
+                {
+                  "id": 454,
+                  "stepName": "اصدار قرار التعيين",
+                  "stepDescription": "",
+                  "stepWeight": 10,
+                  "startDate": "2024-09-26T00:00:00",
+                  "endDate": "2024-09-30T00:00:00",
+                  "stepEvidence": "",
+                  "completedPercentage": 0
+                }
+              ],
+              "summary": [],
+              "daysLeft": 26,
+              "planTimelineInWeeks": 19
+            }
+          ],
+          "plansCount": 51749038,
+          "summary": [
+            {
+              "value": "<Error: Too many levels of nesting to fake this schema>"
+            },
+            {
+              "value": "<Error: Too many levels of nesting to fake this schema>"
+            }
+          ],
+          "mainAxisNameAR": "elit Excepteur"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "name": "dolor minim esse nisi",
+      "targeted": 15995845,
+      "completed": 10265122,
+      "subAxisId": -86919989,
+      "budget": -29899162.574562192,
+      "remainingAmount": -62757917.62950251,
+      "spentAmount": 66437622.41949484
+    },
+    {
+      "name": "exercitation ad sint mollit",
+      "targeted": 70573526,
+      "completed": -47708632,
+      "subAxisId": 38728497,
+      "budget": -39724291.708780736,
+      "remainingAmount": -38722636.613684714,
+      "spentAmount": 27382509.23085536
+    }
+  ]
+}

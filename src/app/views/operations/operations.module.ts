@@ -9,8 +9,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { BasicPrimitivesModule } from 'ngx-basic-primitives';
 import { NgApexchartsModule } from "ng-apexcharts";
 import { FormsModule } from '@angular/forms';
+import { OperationDiagramComponent } from './operation-diagram/operation-diagram.component';
 @NgModule({
-  declarations: [OperationsComponentComponent],
+  declarations: [OperationsComponentComponent,OperationDiagramComponent],
   imports: [
     CommonModule,
     operationsRoutingModule,

@@ -3,12 +3,22 @@ import { BlankLayoutComponent } from './shared/components/layouts/blank-layout/b
 import { HeaderLayoutComponent } from './shared/components/layouts/header-layout/header-layout.component';
 
 export const routes: Routes = [
+  {
+    path: '',
+    component: HeaderLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule)
+      }
+    ]
+  },
     {
         path: '',
         component: HeaderLayoutComponent,
         children: [
           {
-            path: '',
+            path: 'operations',
             loadChildren: () => import('./views/operations/operations.module').then(m => m.OperationsModule)
           }
         ]
@@ -28,7 +38,7 @@ export const routes: Routes = [
         component: HeaderLayoutComponent,
         children: [
           {
-            path: '',
+            path: 'axis',
             loadChildren: () => import('./views/axis/axis.module').then(m => m.AxisModule)
           }
         ]

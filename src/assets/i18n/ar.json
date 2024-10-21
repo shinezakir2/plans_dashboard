@@ -23,6 +23,7 @@
     "deadline":"deadline",
     "responsibleOfficer":"المعني بالتنفيذ",
     "monitoringOfficer":"المعني بالمتابعة",
+    "plan_status_0":"الكل",
     "plan_status_1":"مكتملة",
     "plan_status_2":"قيد الإنجاز",
     "plan_status_3":"لم تبدأ بعد",
@@ -49,5 +50,17 @@
     "details":"التفاصيل",
     "go_back":"الرجوع للصفحة السابقة",
     "steps":"الخطوات",
-    "plan_details":"تفاصيل الخطة"
+    "plan_details":"تفاصيل الخطة",
+    "total_plans":"مجموع الخطط",
+    "total_completed_plans":"الخطط المكتملة",
+    "total_pending_plans":"الخطط قيد الإنجاز",
+    "total_not_started_plans":"الخطط لم تبدأ بعد",
+    "total_budget":"مجموع المبالغ المخصصة",
+    "total_spent":"مجموع المبالغ المنفقة",
+    "total_remaining":"مجموع المبالغ المتبقية",
+    "attchaments":"الادلة",
+"total_axis":"مجموع المحاور الرئيسية",
+"total_subaxis":"مجموع المحاور الفرعية",
+"show_status":"عرض بحسب الحالة",
+"show_next_steps":"الخطوات التالية"
 }

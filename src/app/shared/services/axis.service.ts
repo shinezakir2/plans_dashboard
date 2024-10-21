@@ -11,8 +11,17 @@ export class AxisService {
   fromJson:boolean=true;
   GetAxis(axisId:any): Observable<any> {
     if(!this.fromJson)
-      return this.httpClient.get(`assets/data/operations.json`);
+      return this.httpClient.get(`assets/data/axis.json`);
     else
       return this.httpClient.get(`assets/data/axis.json`);
+  }
+  
+  
+  GetPlan(planId:any): Observable<any> {
+    return this.httpClient.get(`assets/data/plan.json`);
+  }
+  
+  GetStepAttchments(stepId:any): Observable<any> {
+    return this.httpClient.get(`assets/data/StepEvidences.json`);
   }
 }

@@ -1,9 +1,9 @@
 <loading-spinner [loadingText]="loadingText" [loading]="isLoading"></loading-spinner>
 
-<breadcrumb [links]="links" [title]="pageTitle"></breadcrumb>
+<breadcrumb [links]="links" [title]="pageTitle" *ngIf="!isLoading"></breadcrumb>
 
 
-<div class="h-100">
+<div class="h-100" *ngIf="!isLoading">
     <div class="row">
         <div class="col-xl-3 col-md-6">
             <!-- card -->
@@ -130,38 +130,31 @@
                                     <th scope="col">{{ 'date' | transloco}}</th>
                                     <th scope="col">{{ 'status' | transloco }}</th>
                                     <th scope="col">{{ 'timePriod' | transloco }}</th>
-                                    <th scope="col">{{ 'timeStatus'|transloco }}</th>
-                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr *ngFor="let plan of axisModel.plans">
-                                    <td scope="col">{{ plan.planNameAR }}</td>
+                                    <td scope="col">
+                                        <a class="btn btn-link" href="axis/plan/{{plan.id}}">{{ plan.planNameAR }}</a>
+                                    </td>
                                     <td scope="col">{{ 'from'|transloco }} {{ plan.startDate | date:'dd/MM/yyyy'}} {{ 'to' | transloco }} {{ plan.endDate | date:'dd/MM/yyyy' }}</td>
                                     <td scope="col">
+                                        
                                         <span class="badge" [ngClass]="getPlanStatusClass(plan.planStatus)">{{ 'plan_status_'+plan.planStatus | transloco }}</span>
                                     </td>
                                     <td scope="col">
+                                        <span class="text-success" *ngIf="plan.planTimelineInWeeks <= 2 || plan.planTimelineInWeeks > 10">{{ plan.planTimelineInWeeks }} {{ 'week' | transloco}}</span>
+                                        <span class="text-success" *ngIf="plan.planTimelineInWeeks > 2 && plan.planTimelineInWeeks <= 10">{{ plan.planTimelineInWeeks }} {{ 'weeks' | transloco}}</span>
+                                        -
                                         <span class="badge" [ngClass]="getStatusOverwrite(plan.planStatus,plan.startDate,plan.endDate)">
                                             {{getStatusOverwrite(plan.planStatus,plan.startDate,plan.endDate) | transloco}}
                                         </span>
-                                    </td>
-                                    <td scope="col">
-                                        
-                                        <span class="text-success" *ngIf="plan.planTimelineInWeeks <= 2 || plan.planTimelineInWeeks > 10">{{ plan.planTimelineInWeeks }} {{ 'week' | transloco}}</span>
-                                        <span class="text-success" *ngIf="plan.planTimelineInWeeks > 2 && plan.planTimelineInWeeks <= 10">{{ plan.planTimelineInWeeks }} {{ 'weeks' | transloco}}</span>
-                                    </td>
-                                    <td scope="col">
-                                        <button (click)="planModel = plan" data-bs-toggle="offcanvas" data-bs-target="#planDetails" aria-controls="planDetails" class="btn btn-primary rounded-pill btn-sm fs-10">
-                                            <i class="ri-user-smile-line label-icon align-middle rounded-pill"></i>
-                                            {{ 'details' | transloco }}
-                                        </button>
                                     </td>
                                 </tr>
                             </tbody>
                             <tbody *ngIf="axisModel.plans.length == 0">
                                 <tr>
-                                    <td colspan="5">
+                                    <td colspan="4">
                                         <div class="row align-items-center">
                                             <div class="col-md-12 text-center">
                                                 <img src="assets/images/no-data.svg" width="150" />
@@ -179,9 +172,4 @@
         </div> <!-- .col-->
         <!-- end col -->
     </div>
-</div>
-
-<!-- bottom offcanvas -->
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="planDetails" aria-labelledby="offcanvasBottomLabel" style="min-height:100vh;">
-    <app-plan-details [planModel]="planModel"></app-plan-details>
 </div>
