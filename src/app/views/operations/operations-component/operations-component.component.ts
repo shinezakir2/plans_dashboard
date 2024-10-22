@@ -3,6 +3,7 @@ import { OperationService } from '../../../shared/services/operation.service';
 import { AnnotationType, Colors,Enabled , ConnectorAnnotationConfig, ConnectorPlacementType, LineType, OrgItemConfig, PageFitMode, GroupByType, HighlightPathAnnotationConfig } from 'ngx-basic-primitives';
 import { ActivatedRoute } from '@angular/router';
 import { ApexChart, ApexNonAxisChartSeries, ApexResponsive } from 'ng-apexcharts';
+import { OperationModel } from '../../../shared/models/operations_model';
 
 @Component({
   selector: 'app-operations-component',
@@ -18,8 +19,8 @@ export class OperationsComponentComponent implements OnInit  {
   totalRecords:number= 0;
   limit:number= 12;
   currentPage:number=1;
-  allOperations:any[]=[];
-  operations:any[]=[];
+  allOperations:OperationModel[]=[];
+  operations:OperationModel[]=[];
   pageTitle='operations';
   links:any[]=[];
   filterTerm:string='';
@@ -37,9 +38,9 @@ export class OperationsComponentComponent implements OnInit  {
   getOperations(){
     this.isLoading=false;
     this.operationService.GetOperations().subscribe({
-      next:(data:any)=>{
-        this.allOperations = data.operations;
-        this.operations = data.operations;
+      next:(data:OperationModel[])=>{
+        this.allOperations = data;
+        this.operations = data;
         this.totalRecords = this.operations.length;
         console.log(this.operations);
       }

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { OidcSecurityService } from 'angular-auth-oidc-client';
 import { Observable, of } from 'rxjs';
 import { LOGIN_URL } from './shared/common/constants';
+import { ConfigService } from './shared/services/config.service';
 
 @Component({
   selector: 'app-root',
@@ -18,22 +19,21 @@ export class AppComponent implements OnInit {
     constructor(private router: Router,private oidcSecurityService: OidcSecurityService,@Inject(LOGIN_URL) private loginUrl: string) { }
 
     ngOnInit() {
-        //this.primengConfig.ripple = true;
+    
         this.userData$ = this.oidcSecurityService.userData$;
-        // this.oidcSecurityService.checkAuth().subscribe(({ isAuthenticated }) => {
-        //   console.log(isAuthenticated);
-        //     if(!isAuthenticated){
-        //        if(this.router.url != this.loginUrl)
-        //       {
-        //         this.router.navigateByUrl(this.loginUrl);
-        //       }
-        //     }
-        //     else{
-        //         this.isAuthenticated = isAuthenticated;
-        //         //debugger;
-        //         //console.log('app authenticated', isAuthenticated);
-        //         //this.router.navigateByUrl('/operations');
-        //     }
-        // });
+        this.oidcSecurityService.checkAuth().subscribe(({ isAuthenticated }) => {
+            if(!isAuthenticated){
+               if(this.router.url != this.loginUrl)
+              {
+                this.router.navigateByUrl(this.loginUrl);
+              }
+            }
+            else{
+                this.isAuthenticated = isAuthenticated;
+                //debugger;
+                //console.log('app authenticated', isAuthenticated);
+                //this.router.navigateByUrl('/operations');
+            }
+        });
     }
 }

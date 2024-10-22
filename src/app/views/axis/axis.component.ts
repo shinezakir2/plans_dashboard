@@ -3,8 +3,9 @@ import { getTranslate } from '../../shared/common/functions';
 import { TranslocoService } from '@ngneat/transloco';
 import { ActivatedRoute } from '@angular/router';
 import { AxisService } from '../../shared/services/axis.service';
-import { AxisModel, PlanModel } from '../../shared/models/axis_model';
+import { AxisModel } from '../../shared/models/axis_model';
 import { formatDate } from '@angular/common';
+import { PlanModel } from '../../shared/models/plan_model';
 
 @Component({
   selector: 'app-axis',
@@ -28,7 +29,7 @@ export class AxisComponent implements OnInit {
 
   ngOnInit(): void {
     
-    this.axisService.GetAxis(this.axisId).subscribe({
+    this.axisService.GetSubAxis(this.axisId).subscribe({
       next:(data:AxisModel) =>{
         this.pageTitle = data.subAxisNameAR;
         this.axisModel = data;

@@ -1,179 +1,106 @@
-{
-  "data": [
-    {
-      "id": 12,
-      "axisNameEN": 0,
-      "axisNameAR": "التمكين والتأهيل",
-      "axisDescEN": 0,
-      "axisDescAR": "التمكين والتأهيل",
-      "count": 3,
-      "subAxis": [
-        {
-          "id": 13,
-          "subAxisNameEN": 0,
-          "subAxisNameAR": "محور الإستقطاب",
-          "subAxisDescEN": 0,
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور الإستقطاب",
-          "plansCount": 3,
-          "summary": 0
-        },
-        {
-          "id": 14,
-          "subAxisNameEN": "",
-          "subAxisNameAR": "محور التدريب",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور التدريب",
-          "plansCount": 1,
-          "summary": 0
-        },
-        {
-          "id": 15,
-          "subAxisNameEN": "",
-          "subAxisNameAR": "محور التعينات",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور التعينات",
-          "plansCount": 6,
-          "summary": 0
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "axisNameEN": "",
-      "axisNameAR": "التجهيزات والدعم واللوجيستي",
-      "axisDescEN": "",
-      "axisDescAR": "التجهيزات والدعم واللوجيستي",
-      "count": 6,
-      "subAxis": [
-        {
-          "id": 16,
-          "subAxisNameEN": "",
-          "subAxisNameAR": "محور التغذية",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور التغذية",
-          
-          "plansCount": 2,
-          "summary": 0
-        },
-        {
-          "id": 17,
-          "subAxisNameEN": "",
-          "subAxisNameAR": "محور اسطول السيارات",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور اسطول السيارات",
-          "plansCount": 2,
-          "summary": 0
-        },
-        {
-          "id": 18,
-          "subAxisNameEN": "",
-          "subAxisNameAR": "محور التجهيزات والملابس العسكرية",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور التجهيزات والملابس العسكرية",
-          "plansCount": 2,
-          "summary": 0
-        },
-        {
-          "id": 19,
-          "subAxisNameEN": "",
-          "subAxisNameAR": "محور الخدمات الإلكترونية",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور الخدمات الإلكترونية",
-          "planPhases": [],
-          "plansCount": 0,
-          "summary": 0
-        },
-        {
-          "id": 20,
-          "subAxisNameEN": "",
-          "subAxisNameAR": " إبرام عقد توفير (  عمالة مساعدة - حراس امن )",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": " إبرام عقد توفير (  عمالة مساعدة - حراس امن )",
-          "plansCount": 1,
-          "summary": 0
-        },
-        {
-          "id": 21,
-          "subAxisNameEN": "",
-          "subAxisNameAR": "محور الدعم اللوجيستي",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور الدعم اللوجيستي",
-          "planPhases": [],
-          "plansCount": 0,
-          "summary": 0
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "axisNameEN": "",
-      "axisNameAR": "إدارة المشاريع اللوجيستية",
-      "axisDescEN": "",
-      "axisDescAR": "إدارة المشاريع اللوجيستية",
-      "count": 1,
-      "subAxis": [
-        {
-          "id": 22,
-          "subAxisNameEN": "",
-          "subAxisNameAR": "محور تحسين وتأهيل المباني",
-          "subAxisDescEN": "",
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور تحسين وتأهيل المباني",
-          "plansCount": 1,
-          "summary": 0
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "axisNameEN": "",
-      "axisNameAR": "إدارة المشاريع الإستشارية",
-      "axisDescEN": "",
-      "axisDescAR": "إدارة المشاريع الإستشارية",
-      "count": 1,
-      "subAxis": [
-        {
-          "id": 23,
-          "subAxisNameEN": 0,
-          "subAxisNameAR": "محور الإستشارات",
-          "subAxisDescEN": 0,
-          "remainingAmount": 0,
-          "spentAmount": 0,
-          "budget": 0,
-          "subAxisDescAR": "محور الإستشارات",
-          "plansCount": 4,
-          "summary": 0
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 12,
+    "axisNameAR": "التمكين والتأهيل",
+    "subAxis": [
+      {
+        "id": 13,
+        "axisId": 12,
+        "subAxisNameAR": "محور الإستقطاب"
+      },
+      {
+        "id": 14,
+        "axisId": 12,
+        "subAxisNameAR": "محور التدريب"
+      },
+      {
+        "id": 15,
+        "axisId": 12,
+        "subAxisNameAR": "محور التعينات"
+      },
+      {
+        "id": 34,
+        "axisId": 12,
+        "subAxisNameAR": "محور تجريبي"
+      },
+      {
+        "id": 35,
+        "axisId": 12,
+        "subAxisNameAR": "محور تجريبي"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "axisNameAR": "التجهيزات والدعم واللوجيستي",
+    "subAxis": [
+      {
+        "id": 16,
+        "axisId": 13,
+        "subAxisNameAR": "محور التغذية"
+      },
+      {
+        "id": 17,
+        "axisId": 13,
+        "subAxisNameAR": "محور اسطول السيارات"
+      },
+      {
+        "id": 18,
+        "axisId": 13,
+        "subAxisNameAR": "محور التجهيزات والملابس العسكرية"
+      },
+      {
+        "id": 19,
+        "axisId": 13,
+        "subAxisNameAR": "محور الخدمات الإلكترونية"
+      },
+      {
+        "id": 20,
+        "axisId": 13,
+        "subAxisNameAR": " إبرام عقد توفير (  عمالة مساعدة - حراس امن )"
+      },
+      {
+        "id": 21,
+        "axisId": 13,
+        "subAxisNameAR": "محور الدعم اللوجيستي"
+      },
+      {
+        "id": 29,
+        "axisId": 13,
+        "subAxisNameAR": "تعهيد الوظائف"
+      },
+      {
+        "id": 30,
+        "axisId": 13,
+        "subAxisNameAR": "محور التدريب"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "axisNameAR": "إدارة المشاريع الإستشارية",
+    "subAxis": [
+      {
+        "id": 23,
+        "axisId": 15,
+        "subAxisNameAR": "محور الإستشارات"
+      },
+      {
+        "id": 31,
+        "axisId": 15,
+        "subAxisNameAR": "محور الإستشارات"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "axisNameAR": "إدارة المشاريع الهندسية",
+    "subAxis": [
+      {
+        "id": 32,
+        "axisId": 21,
+        "subAxisNameAR": "محور تحسين وتأهيل المباني"
+      }
+    ]
+  }
+]

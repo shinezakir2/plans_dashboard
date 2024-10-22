@@ -1,167 +1,162 @@
-{
-  "operations": [
-    {
-      "id": 1,
-      "name": "إستقطاب الدارسين",
-      "plansCount": 5,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 2
-    },
-    {
-      "id": 2,
-      "name": "Operation Beta",
-      "plansCount": 4,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 1
-    },
-    {
-      "id": 3,
-      "name": "Operation Gamma",
-      "plansCount": 6,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 3
-    },
-    {
-      "id": 4,
-      "name": "Operation Delta",
-      "plansCount": 3,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 0
-    },
-    {
-      "id": 5,
-      "name": "Operation Epsilon",
-      "plansCount": 2,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 1
-    },
-    {
-      "id": 6,
-      "name": "Operation Zeta",
-      "plansCount": 7,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 4
-    },
-    {
-      "id": 7,
-      "name": "Operation Eta",
-      "plansCount": 5,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 2
-    },
-    {
-      "id": 8,
-      "name": "Operation Theta",
-      "plansCount": 4,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 1
-    },
-    {
-      "id": 9,
-      "name": "Operation Iota",
-      "plansCount": 6,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 3
-    },
-    {
-      "id": 10,
-      "name": "Operation Kappa",
-      "plansCount": 3,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 0
-    },
-    {
-      "id": 11,
-      "name": "Operation Lambda",
-      "plansCount": 2,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 1
-    },
-    {
-      "id": 12,
-      "name": "Operation Mu",
-      "plansCount": 7,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 4
-    },
-    {
-      "id": 13,
-      "name": "Operation Nu",
-      "plansCount": 5,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 2
-    },
-    {
-      "id": 14,
-      "name": "Operation Xi",
-      "plansCount": 4,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 1
-    },
-    {
-      "id": 15,
-      "name": "Operation Omicron",
-      "plansCount": 6,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 3
-    },
-    {
-      "id": 16,
-      "name": "Operation Pi",
-      "plansCount": 3,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 0
-    },
-    {
-      "id": 17,
-      "name": "Operation Rho",
-      "plansCount": 2,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 1
-    },
-    {
-      "id": 18,
-      "name": "Operation Sigma",
-      "plansCount": 7,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 4
-    },
-    {
-      "id": 19,
-      "name": "Operation Tau",
-      "plansCount": 5,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 2
-    },
-    {
-      "id": 20,
-      "name": "Operation Upsilon",
-      "plansCount": 4,
-      "startDate":"01/01/2024",
-      "endDate":"01/01/2025",
-      "completedPlans": 1
-    }
-  ]
-  
+[
+  {
+    "id": 1,
+    "name": "إستقطاب الدارسين",
+    "plansCount": 5,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 2
+  },
+  {
+    "id": 2,
+    "name": "Operation Beta",
+    "plansCount": 4,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 1
+  },
+  {
+    "id": 3,
+    "name": "Operation Gamma",
+    "plansCount": 6,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 3
+  },
+  {
+    "id": 4,
+    "name": "Operation Delta",
+    "plansCount": 3,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 0
+  },
+  {
+    "id": 5,
+    "name": "Operation Epsilon",
+    "plansCount": 2,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 1
+  },
+  {
+    "id": 6,
+    "name": "Operation Zeta",
+    "plansCount": 7,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 4
+  },
+  {
+    "id": 7,
+    "name": "Operation Eta",
+    "plansCount": 5,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 2
+  },
+  {
+    "id": 8,
+    "name": "Operation Theta",
+    "plansCount": 4,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 1
+  },
+  {
+    "id": 9,
+    "name": "Operation Iota",
+    "plansCount": 6,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 3
+  },
+  {
+    "id": 10,
+    "name": "Operation Kappa",
+    "plansCount": 3,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 0
+  },
+  {
+    "id": 11,
+    "name": "Operation Lambda",
+    "plansCount": 2,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 1
+  },
+  {
+    "id": 12,
+    "name": "Operation Mu",
+    "plansCount": 7,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 4
+  },
+  {
+    "id": 13,
+    "name": "Operation Nu",
+    "plansCount": 5,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 2
+  },
+  {
+    "id": 14,
+    "name": "Operation Xi",
+    "plansCount": 4,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 1
+  },
+  {
+    "id": 15,
+    "name": "Operation Omicron",
+    "plansCount": 6,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 3
+  },
+  {
+    "id": 16,
+    "name": "Operation Pi",
+    "plansCount": 3,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 0
+  },
+  {
+    "id": 17,
+    "name": "Operation Rho",
+    "plansCount": 2,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 1
+  },
+  {
+    "id": 18,
+    "name": "Operation Sigma",
+    "plansCount": 7,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 4
+  },
+  {
+    "id": 19,
+    "name": "Operation Tau",
+    "plansCount": 5,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 2
+  },
+  {
+    "id": 20,
+    "name": "Operation Upsilon",
+    "plansCount": 4,
+    "startDate":"01/01/2024",
+    "endDate":"01/01/2025",
+    "completedPlans": 1
   }
-
-  
+]

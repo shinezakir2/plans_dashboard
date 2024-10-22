@@ -3,7 +3,7 @@
 <breadcrumb [links]="links" [title]="pageTitle" *ngIf="!isLoading"></breadcrumb>
 
 <div class="row" *ngIf="!isLoading">
-    <div class="col-auto layout-rightside-col d-block">
+    <div class="col-auto">
         <div class="overlay"></div>
         <div class="layout-rightside">
             <div class="card rounded-0">
@@ -108,7 +108,7 @@
     <!--end row-->
     <div class="col">
         <div class="timeline">
-            <div *ngFor="let step of planModel.steps;" [ngClass]="timelineAlign" class="timeline-item">
+            <div *ngFor="let step of planModel.planSteps;" [ngClass]="timelineAlign" class="timeline-item">
                 <i class="text-muted icon ri-stack-line"></i>
                 <div class="date fs-12">{{ step.startDate | date:'dd/MM/yyyy' }} - {{ step.endDate | date:'dd/MM/yyyy' }}</div>
                 <div class="content">
@@ -144,16 +144,14 @@
                             [animationDuration]="300"
                             ></circle-progress>
                         </div>
-                        <div class="col-md-12">
-                           
+                        <div class="col d-flex align-items-center">
+                           <!-- Buttons with Label -->
+                            <button type="button" (click)="getAttchments(step.id)" data-bs-toggle="modal" data-bs-target="#attchaments" class="btn btn-primary btn-sm btn-label waves-effect waves-light">
+                                <i class="ri-download-2-line label-icon align-middle fs-16 me-2"></i>
+                                {{ 'attchaments' |transloco }}
+                            </button>
                         </div>
                     </div>
-
-                    <!-- Buttons with Label -->
-                    <button type="button" (click)="getAttchments(step.id)" data-bs-toggle="modal" data-bs-target="#attchaments" class="btn btn-primary btn-sm btn-label waves-effect waves-light">
-                        <i class="ri-download-2-line label-icon align-middle fs-16 me-2"></i>
-                        {{ 'attchaments' |transloco }}
-                    </button>
                 </div>
 
                 {{changeAlignValue()}}
@@ -187,7 +185,7 @@
                             </div>
                             <div class="flex-shrink-0 ms-2">
                                 <div class="d-flex gap-1">
-                                    <button type="button" class="btn btn-icon text-muted btn-sm fs-18 material-shadow-none"><i class="ri-download-2-line"></i></button>
+                                    <button type="button" (click)="downloadFile(file)" class="btn btn-icon text-muted btn-sm fs-18 material-shadow-none"><i class="ri-download-2-line"></i></button>
                                  
                                 </div>
                             </div>

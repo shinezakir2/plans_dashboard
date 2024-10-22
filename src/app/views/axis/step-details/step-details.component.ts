@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { StepModel } from '../../../shared/models/axis_model';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { PlanStepModel } from '../../../shared/models/step_model';
 
 @Component({
   selector: 'app-step-details',
@@ -12,7 +12,7 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 })
 export class StepDetailsComponent implements OnInit {
   chartOptions:any;
-  @Input('stepModel') stepModel: StepModel = new StepModel();
+  @Input('stepModel') stepModel: PlanStepModel = new PlanStepModel();
 
 
   ngOnInit(): void {

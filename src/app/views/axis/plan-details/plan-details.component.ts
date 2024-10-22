@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { PlanModel } from '../../../shared/models/axis_model';
 import { formatDate } from '@angular/common';
 import { AxisService } from '../../../shared/services/axis.service';
 import { ActivatedRoute } from '@angular/router';
 import { StepEvidences } from '../../../shared/models/step_evidences';
+import { PlanModel } from '../../../shared/models/plan_model';
+import { getMimeTypeFromExtension } from '../../../shared/common/functions';
 
 @Component({
   selector: 'app-plan-details',
@@ -134,7 +135,7 @@ export class PlanDetailsComponent implements OnInit {
         href:'/'
       },
       {
-        name:this.planModel.subAxisName,
+        name:this.planModel.subAxisNameAR,
         active:false,
         href:'/axis/'+this.planModel.subAxisId
       },
@@ -144,5 +145,37 @@ export class PlanDetailsComponent implements OnInit {
         href:'/'
       }
     ];
+  }
+
+  downloadFile(stepEvidence:StepEvidences) {
+    var base64Data: string = stepEvidence.base64Data;
+    var fileName: string =stepEvidence.fileName;
+    var fileType: string = getMimeTypeFromExtension(stepEvidence.fileName)
+    // Convert base64 string to a byte array
+    const byteCharacters = atob(base64Data);
+    const byteNumbers = new Array(byteCharacters.length);
+    
+    for (let i = 0; i < byteCharacters.length; i++) {
+      byteNumbers[i] = byteCharacters.charCodeAt(i);
+    }
+  
+    const byteArray = new Uint8Array(byteNumbers);
+  
+    // Create a Blob from the byte array
+    const blob = new Blob([byteArray], { type: fileType });
+  
+    // Create a URL for the Blob
+    const blobUrl = URL.createObjectURL(blob);
+  
+    // Create an anchor element and trigger a download
+    const link = document.createElement('a');
+    link.href = blobUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+  
+    // Clean up by revoking the object URL and removing the link element
+    URL.revokeObjectURL(blobUrl);
+    document.body.removeChild(link);
   }
 }

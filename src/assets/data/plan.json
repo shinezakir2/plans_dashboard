@@ -18,7 +18,7 @@
       "planStatus": 2,
       "daysLeft": 254,
       "planTimelineInWeeks": 19,
-    "steps":[
+    "planSteps":[
         {
           "id": 334,
           "planId":34,

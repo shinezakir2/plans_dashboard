@@ -3,7 +3,7 @@ import { OidcSecurityService } from 'angular-auth-oidc-client';
 import { Observable, of } from 'rxjs';
 import { HttpHeaders } from '@angular/common/http';
 import { AppService } from '../../../services/app.service';
-import { MenuDTO, SubMenu } from '../../../models/menu_model';
+import { MenuDTO, SubAxi } from '../../../models/menu_model';
 
 @Component({
   selector: 'app-header-layout',
@@ -17,11 +17,11 @@ export class HeaderLayoutComponent implements OnInit{
   fullname:any;
   email:any;
   isAuthenticated = false;
-  menuItems:MenuDTO=new MenuDTO();
+  menuItems:MenuDTO[] = [];
   private headers: HttpHeaders = new HttpHeaders();
   
   constructor(private securityService: OidcSecurityService,private appService:AppService){
-    this.menuItems.data = [];
+    this.menuItems = [];
   }
 
   ngOnInit(): void {
@@ -45,10 +45,7 @@ export class HeaderLayoutComponent implements OnInit{
     this.headers.append("ngrok-skip-browser-warning", "true");
     
     this.appService.GetMenu().subscribe({
-      next:(data:MenuDTO) => {
-      
-        
-
+      next:(data:MenuDTO[]) => {
         this.menuItems = data;
         this.addCustomMenu();
 
@@ -62,18 +59,18 @@ export class HeaderLayoutComponent implements OnInit{
   }
 
   addCustomMenu(){
-    var operations = new SubMenu();
+    var operations = new MenuDTO();
     operations.href ='/operations';
     operations.axisNameAR ='operations';
-    operations.axisNameEN='operations';
+    operations.axisNameAR='operations';
     operations.id=0;
-    this.menuItems.data.push(operations);
+    this.menuItems.push(operations);
 
-    var home = new SubMenu();
+    var home = new MenuDTO();
     home.href ='/';
     home.axisNameAR ='home';
-    home.axisNameEN='home';
+    home.axisNameAR='home';
     home.id=-1;
-    this.menuItems.data.push(home);
+    this.menuItems.push(home);
   }
 }

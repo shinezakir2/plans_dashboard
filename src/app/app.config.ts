@@ -1,4 +1,4 @@
-import { ApplicationConfig, importProvidersFrom, isDevMode, provideZoneChangeDetection } from '@angular/core';
+import { APP_INITIALIZER, ApplicationConfig, importProvidersFrom, Injector, isDevMode, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -7,13 +7,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { TranslocoHttpLoader } from './transloco-loader';
 import { AuthModule, LogLevel } from 'angular-auth-oidc-client';
-import { environment } from '../environments/environment';
-import { LOGIN_URL } from './shared/common/constants';
+import { AUTH_URL, LOGIN_URL } from './shared/common/constants';
 import { AppService } from './shared/services/app.service';
 import { OperationService } from './shared/services/operation.service';
 import { SharedPipesModule } from './shared/pipes/shared-pipes.module';
 import { AxisService } from './shared/services/axis.service';
 import { DashboardService } from './shared/services/dashboard.service';
+import { ConfigService } from './shared/services/config.service';
+
+// Function to load configuration before the app starts
+export function initConfig(configService: ConfigService): () => Promise<void> {
+  return () => configService.loadConfig();
+}
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -33,7 +38,7 @@ export const appConfig: ApplicationConfig = {
       SharedPipesModule,
       AuthModule.forRoot({
         config: {
-          authority:  environment.authorityURL,
+          authority: 'https://emstest.adcda.gov.ae/auth', // Get the dynamic authority URL
           redirectUrl: window.location.origin,
           postLogoutRedirectUri: window.location.origin,
           clientId: 'angularclient',
@@ -59,10 +64,17 @@ export const appConfig: ApplicationConfig = {
     AppService,
     OperationService,
     AxisService,
+    ConfigService,
     DashboardService,
     {
       provide: LOGIN_URL,
       useValue: '/sessions/signin'
-    }
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initConfig,
+      deps: [ConfigService],
+      multi: true
+    }    
   ]
 };

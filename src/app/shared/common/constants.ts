@@ -13,6 +13,8 @@ export const Request_Sent_Success_URL = new InjectionToken<string>('requestsent'
 
 export const LOGIN_URL = new InjectionToken<string>('loginUrl');
 
+export const AUTH_URL = new InjectionToken<string>('authorityURL');
+
 export const STYLE_HOST = new InjectionToken<Node>('styleHost');
 
 export const TIME_RANGE_SEPARATOR = new InjectionToken<Node>('timeRangeSeparator');

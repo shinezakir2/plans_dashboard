@@ -1,29 +1,13 @@
+ 
 export class MenuDTO {
-    data!: SubMenu[]
+  id: number = 0;
+  axisNameAR: string = '';
+  subAxis!: SubAxi[]
+  href:string = '';
 }
-  
-export class SubMenu {
-    id!: number
-    axisNameEN!: any
-    axisNameAR!: string
-    axisDescEN!: any
-    axisDescAR!: string
-    count!: number
-    href!:string
-    subAxis!: SubAxi[]
+
+export class SubAxi {
+  id: number = 0;
+  axisId: number = 0;
+  subAxisNameAR: string = '';
 }
-  
-  export class SubAxi {
-    id!: number
-    subAxisNameEN: any
-    subAxisNameAR!: string
-    subAxisDescEN: any
-    remainingAmount!: number
-    spentAmount!: number
-    budget!: number
-    subAxisDescAR!: string
-    plansCount!: number
-    summary!: number
-    planPhases?: any[]
-  }
-  

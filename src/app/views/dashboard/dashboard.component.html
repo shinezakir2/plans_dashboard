@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col">
+    <div class="col-sm-12 col-md-3 col-lg-2">
         <div class="card card-animate">
             <div class="card-body">
                 <div class="d-flex justify-content-between">
@@ -12,7 +12,7 @@
                     <div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-info-subtle rounded-circle fs-2">
-                                <i class="text-info"></i>
+                                <i class="ri-order-play-fill text-primary"></i>
                             </span>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
             </div><!-- end card body -->
         </div> <!-- end card-->
     </div> <!-- end col-->
-    <div class="col">
+    <div class="col-sm-12 col-md-3 col-lg-2">
         <div class="card card-animate">
             <div class="card-body">
                 <div class="d-flex justify-content-between">
@@ -33,7 +33,7 @@
                     <div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-info-subtle rounded-circle fs-2">
-                                <i class="text-info"></i>
+                                <i class="ri-shuffle-fill text-info"></i>
                             </span>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
             </div><!-- end card body -->
         </div> <!-- end card-->
     </div> <!-- end col-->
-    <div class="col">
+    <div class="col-sm-12 col-md-3 col-lg-2">
         <div class="card card-animate">
             <div class="card-body">
                 <div class="d-flex justify-content-between">
@@ -54,7 +54,7 @@
                     <div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-info-subtle rounded-circle fs-2">
-                                <i class="text-info"></i>
+                                <i class="ri-dashboard-line text-info"></i>
                             </span>
                         </div>
                     </div>
@@ -62,12 +62,14 @@
             </div><!-- end card body -->
         </div> <!-- end card-->
     </div> <!-- end col-->
-    <div class="col">
+    <div class="col-sm-12 col-md-3 col-lg-2">
         <div class="card card-animate">
             <div class="card-body">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="fw-medium text-muted mb-0">{{ 'total_completed_plans' | transloco }}</p>
+                        <p class="fw-medium text-muted mb-0">
+                            <button type="button"  class="btn btn-link p-0" (click)="selectedPlanStatus=1;filterPlans()">{{ 'total_completed_plans' | transloco }}</button>
+                        </p>
                         <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
                             {{completedPlans}}
                         </h2>
@@ -75,7 +77,7 @@
                     <div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-success-subtle rounded-circle fs-2">
-                                <i class="text-info"></i>
+                                <i class="ri-check-double-fill text-success"></i>
                             </span>
                         </div>
                     </div>
@@ -83,12 +85,14 @@
             </div><!-- end card body -->
         </div> <!-- end card-->
     </div> <!-- end col-->
-    <div class="col">
+    <div class="col-sm-12 col-md-3 col-lg-2">
         <div class="card card-animate">
             <div class="card-body">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="fw-medium text-muted mb-0">{{ 'total_pending_plans' | transloco }}</p>
+                        <p class="fw-medium text-muted mb-0">
+                            <button type="button"  class="btn btn-link p-0" (click)="selectedPlanStatus=2;filterPlans()">{{ 'total_pending_plans' | transloco }}</button>
+                        </p>
                         <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
                             {{pendingPlans}}
                         </h2>
@@ -96,7 +100,7 @@
                     <div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-warning-subtle rounded-circle fs-2">
-                                <i class="text-info"></i>
+                                <i class="ri-check-fill text-warning"></i>
                             </span>
                         </div>
                     </div>
@@ -104,12 +108,14 @@
             </div><!-- end card body -->
         </div> <!-- end card-->
     </div> <!-- end col-->
-    <div class="col">
+    <div class="col-sm-12 col-md-3 col-lg-2">
         <div class="card card-animate">
             <div class="card-body">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="fw-medium text-muted mb-0">{{ 'total_not_started_plans' | transloco }}</p>
+                        <p class="fw-medium text-muted mb-0">
+                            <button type="button"  class="btn btn-link p-0" (click)="selectedPlanStatus=3;filterPlans()">{{ 'total_not_started_plans' | transloco }}</button>
+                        </p>
                         <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
                             {{notStartedPlans}}
                         </h2>
@@ -117,7 +123,7 @@
                     <div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-danger-subtle rounded-circle fs-2">
-                                <i class="text-info"></i>
+                                <i class="ri-indeterminate-circle-fill text-danger"></i>
                             </span>
                         </div>
                     </div>
